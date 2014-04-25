@@ -421,6 +421,10 @@ footer .container .linksList .footerCell img {
 		height: 100%;
 	}
 
+	.slide.mobile {
+		height: 768px;
+	}
+
 	/* ===========================
    ===== intro  =====
    =========================== */

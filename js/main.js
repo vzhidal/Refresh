@@ -1,24 +1,24 @@
 touched = false;
 
-$(function(){
+$(function () {
 	PulseArrows();
 
 	$(window).on('resize', SetSlideHeight);
 	InitSlideHeight();
 
-	$(window).on('ds-resize', function(){
+	$(window).on('ds-resize', function () {
 		InitCurtain();
 	});
 	InitCurtain();
 
-	$('.slide-nav-link').on('click', function(e){
+	$('.slide-nav-link').on('click', function (e) {
 		e.preventDefault();
 
 		var slide = $($(this).attr('href'));
-		if (slide.length) {
+		if(slide.length) {
 			var scrollVal = 0;
 			var wrap = slide.data('ds-curtain-parent');
-			if (wrap) {
+			if(wrap) {
 				scrollVal = wrap.offset().top;
 			} else {
 				scrollVal = slide.offset().top;
@@ -31,37 +31,34 @@ $(function(){
 	CheckPager();
 });
 
-function CheckPager()
-{
-	$('.main-section').each(function(e){
+function CheckPager() {
+	$('.main-section').each(function (e) {
 		var slide = $(this);
 
 		var scrollVal = 0;
 		var wrap = slide.data('ds-curtain-parent');
-		if (wrap) {
+		if(wrap) {
 			scrollVal = wrap.offset().top;
 		} else {
 			scrollVal = slide.offset().top;
 		}
 
-		if ($(window).scrollTop() >= scrollVal) {
+		if($(window).scrollTop() >= scrollVal) {
 			$('.slide-pager a').removeClass('active');
-			$('.pager-link-'+slide.attr('id')).addClass('active');
+			$('.pager-link-' + slide.attr('id')).addClass('active');
 		}
 	});
 }
 
-function InitCurtain()
-{
-	if ($(window).width() > 768) {
+function InitCurtain() {
+	if($(window).width() > 768) {
 		$('.main-slides .main-section').dsCurtain();
 	} else {
 		$('.main-slides .main-section').dsCurtain('destroy');
 	}
 }
 
-function PulseArrows()
-{
+function PulseArrows() {
 	var arrows = $('.down-arrows img');
 	arrows.stop(true);
 	arrows.css({'opacity': '0'});
@@ -85,18 +82,16 @@ function PulseArrows()
 	setTimeout(PulseArrows, 1700);
 }
 
-function InitSlideHeight()
-{
-	if ($(window).width() > 768) {
+function InitSlideHeight() {
+	if($(window).width() > 768) {
 		$('.main-slides .section-content').css({'min-height': $(window).height() + 'px'});
 	} else {
 		$('.intro-section .section-content').css({'min-height': $(window).height() + 'px'});
 	}
 }
 
-function SetSlideHeight()
-{
-	if ($(window).width() > 768) {
+function SetSlideHeight() {
+	if($(window).width() > 768) {
 		$('.main-slides .section-content').css({'min-height': $(window).height() + 'px'});
 	} else {
 		var tempH = $('.intro-section .section-content').css('min-height');
@@ -117,11 +112,11 @@ function SetSlideHeight()
 
 	var options = {};
 
-    var methods = {
-        init: function (args) {
+	var methods = {
+		init: function (args) {
 			$this = this;
 
-			if (touched == false && init == false) {
+			if(touched == false && init == false) {
 				options = $.extend({
 					deadZone: 0
 				}, args);
@@ -129,7 +124,7 @@ function SetSlideHeight()
 				init = true;
 				totalSlides = this.length;
 
-				this.each(function(i){
+				this.each(function (i) {
 					var slide = $(this);
 
 					slide.wrap('<div class="curtain-wrap"></div>');
@@ -137,7 +132,7 @@ function SetSlideHeight()
 					slide.data('ds-curtain-parent', wrap);
 					wrap.data('ds-curtain-child', slide);
 
-					if (totalSlides == (i+1)) {
+					if(totalSlides == (i + 1)) {
 						wrap.height(slide.height());
 					} else {
 						wrap.height(slide.height() + options.deadZone);
@@ -161,35 +156,37 @@ function SetSlideHeight()
 				$this.dsCurtain('setScroll');
 			}
 
-			$(window).on('ds-resize.ds-curtain', function(){
+			$(window).on('ds-resize.ds-curtain', function () {
 				$this.dsCurtain('reinit');
 			});
 
-			$(window).on('scroll.ds-curtain', function(){
+			$(window).on('scroll.ds-curtain', function () {
 				$this.dsCurtain('setScroll');
 			});
 
-			$(window).on('touchstart', function(e){
-				if ( ! touched) {
+			$(window).on('touchstart', function (e) {
+				if(!touched) {
 					touched = true;
 					$this.dsCurtain('destroy');
+
+					$(".slide").addClass("mobile");
 				}
 			});
 
 			return this;
-        },
-		reinit: function(){
-			if (init) {
+		},
+		reinit: function () {
+			if(init) {
 				$this.dsCurtain('destroy');
 				$this.dsCurtain();
 			}
 		},
-		setScroll: function(){
-			if (init) {
-				for (var i in slides) {
+		setScroll: function () {
+			if(init) {
+				for(var i in slides) {
 					var slide = slides[i];
 					var wrap = slide.data('ds-curtain-parent');
-					if ($(window).scrollTop() >= slidePos[i]) {
+					if($(window).scrollTop() >= slidePos[i]) {
 						slide.css({
 							'position': '',
 							'left': '',
@@ -207,11 +204,11 @@ function SetSlideHeight()
 				}
 			}
 		},
-        destroy: function (options) {
-			if (init) {
+		destroy: function (options) {
+			if(init) {
 				init = false;
 
-				for (i in slides) {
+				for(i in slides) {
 					var slide = slides[i];
 
 					slide.css({
@@ -234,16 +231,16 @@ function SetSlideHeight()
 
 				$(window).off('.ds-curtain');
 			}
-        }
-    }
+		}
+	}
 
-    $.fn.dsCurtain = function (method) {
-        if (methods[method]) {
-            return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
-        } else if (typeof method === 'object' || !method) {
-            return methods.init.apply(this, arguments);
-        } else {
-            $.error('Method ' + method + ' does not exist on jQuery.dsCurtain');
-        }
-    };
+	$.fn.dsCurtain = function (method) {
+		if(methods[method]) {
+			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+		} else if(typeof method === 'object' || !method) {
+			return methods.init.apply(this, arguments);
+		} else {
+			$.error('Method ' + method + ' does not exist on jQuery.dsCurtain');
+		}
+	};
 })(jQuery);
