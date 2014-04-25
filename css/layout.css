@@ -88,6 +88,7 @@ a:visited {
 	position: relative;
 	background: white;
 }
+
 .main-section .section-content {
 	position: relative;
 	z-index: 1;
@@ -187,6 +188,10 @@ a:visited {
 #intro .container .productLogo .productDescription p {
 	margin: 0;
 	padding: 0;
+}
+
+#intro .container .productLogo .slogan, #intro .container .productLogo .productDescription {
+	vertical-align: top;
 }
 
 /* ===========================
@@ -464,7 +469,7 @@ footer .container .linksList .footerCell img {
 
 	#intro .container .productLogo .productDescription {
 		display: table-cell;
-		padding: 0 40px;
+		padding: 5px 35px 0;
 		text-align: left;
 		width: 100%;
 		line-height: 1.6em;
