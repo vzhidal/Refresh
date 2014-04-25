@@ -84,6 +84,8 @@ a:visited {
 
 .main-section {
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.6);
 	overflow: hidden;
 	position: relative;
 	background: white;
@@ -155,12 +157,16 @@ a:visited {
 	max-width: 174px;
 	background-color: #FF005C;
 	border-radius: 20px 0 0 20px;
+	-moz-border-radius: 20px 0 0 20px;
+	-webkit-border-radius: 20px 0 0 20px;
 	color: #FFFFFF;
 	font-size: 0.79em;
 	font-weight: bold;
 	line-height: 1.2em;
 	padding: 3px 30px;
 	text-align: left;
+	-moz-box-shadow: 0px 1px 15px #000000;
+	-webkit-box-shadow: 0px 1px 15px #000000;
 	box-shadow: 0px 1px 15px #000000;
 }
 
@@ -267,9 +273,7 @@ a:visited {
 
 #workDescription .container .container-inner {
 	padding: 20px 10px;
-
 	background: rgba(255, 255, 255, 0.85);
-
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
@@ -383,6 +387,8 @@ footer .container {
 	border: 0;
 	border-top: 1px solid #ccc;
 	box-shadow: 0px 0px 3px #000;
+	-moz-box-shadow: 0px 0px 3px #000;
+	-webkit-box-shadow: 0px 0px 3px #000;
 }
 
 footer .container a {
@@ -469,7 +475,7 @@ footer .container .linksList .footerCell img {
 
 	#intro .container .productLogo .productDescription {
 		display: table-cell;
-		padding: 5px 35px 0;
+		padding: 2px 35px 0;
 		text-align: left;
 		width: 100%;
 		line-height: 1.6em;
@@ -657,6 +663,9 @@ footer .container .linksList .footerCell img {
 
 	#intro .container .reserve {
 		max-width: 126px;
+		border-radius: 10px 0 0 10px;
+		-moz-border-radius: 10px 0 0 10px;
+		-webkit-border-radius: 10px 0 0 10px;
 	}
 
 	#intro .container .productLogo {
