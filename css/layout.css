@@ -378,7 +378,7 @@ footer {
 }
 
 footer .container {
-	padding: 2.5% 20px;
+	padding: 10px 20px;
 	margin: 0px 0;
 	border: 0;
 	border-top: 1px solid #ccc;
@@ -626,6 +626,10 @@ footer .container .linksList .footerCell img {
 	/* ===========================
    ===== Footer  =====
    =========================== */
+	footer .container {
+		padding: 20px;
+	}
+
 	footer .container .linksList .copyright {
 		font-size: 0.5em;
 		color: #656565;
