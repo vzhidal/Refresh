@@ -582,6 +582,7 @@ footer .container .linksList .footerCell img {
 		display: table;
 		height: 100%;
 		text-align: center;
+		padding: 0 20px;
 	}
 
 	#creatorsStory .container .container-inner {
