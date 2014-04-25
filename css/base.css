@@ -1,0 +1,132 @@
+@media screen and (max-width: 767px) {
+	.rd-tablet {
+		display: none !important;
+	}
+
+	.rd-desktop {
+		display: none !important;
+	}
+
+	.rd-phone {
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.rd-phone {
+		display: none !important;
+	}
+
+	.rd-desktop {
+		display: none !important;
+	}
+
+	.rd-tablet {
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.rd-phone {
+		display: none !important;
+	}
+
+	.rd-tablet {
+		display: none !important;
+	}
+
+	.rd-desktop {
+		display: block !important;
+	}
+}
+
+::-webkit-input-placeholder {
+	color: rgb(128, 128, 128);
+}
+
+::-moz-placeholder {
+	color: rgb(128, 128, 128);
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+	color: rgb(128, 128, 128);
+}
+
+/* ie */
+input:-moz-placeholder {
+	color: rgb(128, 128, 128);
+}
+
+input[type="text"], textarea, select {
+	font-family: Gotham;
+}
+
+/* ===========================
+   ======= Body style ========
+   =========================== */
+
+body {
+	padding: 0;
+	margin: 0;
+
+	font-size: 16pt;
+	font-family: Gotham;
+
+	/* smooth font */
+	-webkit-font-smoothing: antialiased;
+	/* end smooth font */
+}
+
+/* ===========================
+   ========= Headings ========
+   =========================== */
+
+h1 {
+	font-size: 4.3em;
+}
+
+h2 {
+	font-size: 1.75em;
+	font-family: JosephinSans;
+}
+
+h3 {
+	font-size: 1.15em;
+}
+
+/* ===========================
+   ======= Anchor style ======
+   =========================== */
+
+a {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+select option {
+	color: black;
+}
+
+select option:first-child {
+	color: rgb(128, 128, 128);
+}
+
+select.empty {
+	color: grey;
+}
+
+/* Hidden placeholder */
+select option[disabled]:first-child {
+	display: none;
+}

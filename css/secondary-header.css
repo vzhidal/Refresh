@@ -1,0 +1,55 @@
+/* ===========================
+   ======= nav ======
+   =========================== */
+nav {
+	background: #ffffff;
+	-moz-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+nav ul {
+	display: table;
+	width: 100%;
+
+	margin: 0 auto;
+	padding: 0;
+
+	height: 56px;
+	font-size: 16px;
+}
+
+nav ul li {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (min-width: 768px) {
+
+	.logo {
+		color: #bfc0c1;
+		font-weight: bold;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.logo h1 {
+		margin: 0;
+		font-size: 70px;
+		line-height: 136px;
+	}
+
+	nav ul {
+		width: 530px;
+		height: 136px;
+		font-size: 18px;
+	}
+}

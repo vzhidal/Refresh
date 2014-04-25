@@ -1,0 +1,674 @@
+/* ===========================
+   ======= Custom fonts ====== 
+   =========================== */
+
+@font-face {
+	font-family: Gotham;
+    src: url('../css/fonts/Gotham-Bold.eot');
+    src: url('../css/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/Gotham-Bold.woff') format('woff'),
+         url('../css/fonts/Gotham-Bold.ttf') format('truetype'),
+         url('../css/fonts/Gotham-Bold.svg#josefin_sansbold') format('svg');
+}
+
+@font-face {
+	font-family: JosephinSans;
+    src: url('../css/fonts/josefinsans-bold-webfont.eot');
+    src: url('../css/fonts/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/josefinsans-bold-webfont.woff') format('woff'),
+         url('../css/fonts/josefinsans-bold-webfont.ttf') format('truetype'),
+         url('../css/fonts/josefinsans-bold-webfont.svg#josefin_sansbold') format('svg');
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url('../css/fonts/Gotham-Book.eot');
+    src: url('../css/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/Gotham-Book.woff') format('woff'),
+    url('../css/fonts/Gotham-Book.ttf') format('truetype'),
+    url('../css/fonts/Gotham-Book.svg#josefin_sansbold') format('svg');
+}
+
+/* ===========================
+   ======= Body style ======== 
+   =========================== */
+
+body {
+	font-size: 16pt;
+	font-family: Gotham;
+	margin: 0;
+	padding: 0;
+
+	/* smooth font */
+	-webkit-font-smoothing: antialiased;
+	/* end smooth font */
+}
+
+.slide {
+		min-height: 480px;
+	}
+
+/* ===========================
+   ========= Headings ======== 
+   =========================== */
+
+h1 {
+	font-size: 4.3em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 0.9em;
+}
+
+/* ===========================
+   ======= Anchor style ====== 
+   =========================== */
+
+a {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+/* ===========================
+   ===== Intro  ===== 
+   =========================== */
+
+   
+#intro h1, #intro h2, #intro h3, #intro h4, #intro h5 {
+	margin: 0px;
+	padding: 0px;
+}
+   
+#intro .background{
+	background-image: url(../images/bg/sky.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: auto;
+	overflow: hidden;
+	height:100%;
+}
+
+#intro .container {
+	padding: 0;
+	margin: 0;
+}
+
+#intro .container , #intro .container  a{
+	color: #254ea6;
+}
+
+#intro .container  a {
+	text-decoration: none;
+}
+
+#intro .container .container-inner {
+
+}
+
+#intro .container header nav {
+	margin-top: 25px;
+}
+
+#intro .container header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#intro .container header nav ul li {
+	display: inline;
+	padding-left: 6.5%;
+	white-space: nowrap;
+}
+
+#intro .container h2 {
+	font-family: JosephinSans;
+}
+#intro .container .reserve {
+	position: absolute;
+	right: 0;
+	top: 120px;
+	max-width: 174px;
+	background-color: #FF005C;
+    border-radius: 20px 0 0 20px;
+    color: #FFFFFF;
+    font-size: 0.79em;
+	font-weight: bold;
+    line-height: 1.2em;
+    padding: 3px 30px;
+    text-align: left;
+	box-shadow: 0px 1px 15px #000000;
+}
+
+#intro .container .productLogo {
+	margin: 300px auto 200px;
+	width: 320px;
+	text-align: justify;
+}
+
+#intro .container .productLogo .slogan {
+	line-height: 2.7em;
+	white-space: nowrap;
+}
+
+#intro .container .productLogo .slogan h2 {
+	text-indent: 0.1em;
+}
+
+#intro .container .productLogo .productDescription {
+	line-height: 1.2em;
+    padding: 0 4px;
+    text-align: left;
+	margin-top: 20px;
+}
+
+#intro .container .productLogo .productDescription p {
+	margin: 0;
+	padding: 0;
+}
+
+/* ===========================
+   ===== Product  ===== 
+   =========================== */
+#product {
+	
+}
+
+#product .container{
+	margin: 0 auto;
+	padding: 125px 0;
+	display: table;
+	height: 100%;
+}
+
+#product .container .container-inner{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#product .container .dispenserPhoto{
+	display: table-cell;
+}
+
+#product .container .dispenserPhoto img{
+	width: 165px;
+}
+
+#product .container .dispenserDescription{
+	display: table-cell;
+	vertical-align: middle;
+	width: 280px;
+}
+
+#product .container .dispenserDescription p {
+	color: #FF005C;
+	text-align: left;
+	padding-left: 40px;
+}
+
+/* ===========================
+   ===== workDescription  =====
+   =========================== */
+
+#workDescription {
+		font-size: 0.7em;
+	}
+
+#workDescription .background {
+	background: url("../images/bg/fruits.jpg");
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-size: cover;
+}
+
+#workDescription .container {
+	padding: 15px 10px;
+	text-align: center;
+}
+
+#workDescription .container p {
+	font-size: 1.4em;
+}
+
+#workDescription .container, #workDescription .container a {
+	color: #ff005c;
+}
+
+#workDescription .container a {
+	text-decoration: none;
+}
+
+#workDescription .container .container-inner {
+	padding: 20px 10px;
+
+	background: rgba(255, 255, 255, 0.85);
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+/* ===========================
+   ===== creatorsStory  =====
+   =========================== */
+
+#creatorsStory {
+
+}
+
+#creatorsStory .container {
+	padding: 15px 20px;
+	text-align: center;
+
+	margin: 0 auto;
+}
+
+#creatorsStory .container h3, #creatorsStory .container .description {
+	color: #077cf5;
+}
+
+#creatorsStory .container .description p {
+	font-size: 1.25em;
+} 
+#creatorsStory .container .story-list {
+	margin: 0;
+	padding: 0;
+}
+
+#creatorsStory .container .story-list li {
+	display: table;
+	list-style: none;
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+#creatorsStory .container .story-list .thumbnail, #creatorsStory .container .story-list p {
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+#creatorsStory .container .story-list .thumbnail {
+	width: 180px;
+}
+
+#creatorsStory .container .story-list .thumbnail img {
+	width: 100%;
+}
+
+#creatorsStory .container .story-list p {
+	margin-top: 0;
+	padding-left: 40px;
+
+	font-size: 0.6em;
+	text-align: left;
+}
+
+/* ===========================
+   ===== News  =====
+   =========================== */
+
+   #news {
+   
+   }
+   
+   #news .container {
+		padding: 10% 20px;
+		margin: 0 auto;
+   }
+   
+   #news .container .container-inner {
+		
+   }
+   
+   #news .container .newsList {
+		display: table;
+		padding:0;
+		margin:0 auto;
+		width: 100%;
+   }
+   
+   #news .container .newsList li {
+		display: table-cell;
+		list-style: none;
+		padding: 0 2%;
+		vertical-align: middle;
+   }
+   
+   #news .container .newsList .newsLogo img{
+		max-width:100%;
+		width:100%;
+		border: 0;
+   }
+   
+   /* ===========================
+   ===== Footer  =====
+   =========================== */
+
+   footer {
+   
+   }
+   
+   footer .container {
+		padding: 2.5% 20px;
+		margin: 0px 0;
+		border:0;   
+		border-top:1px solid #ccc;
+		box-shadow: 0px 0px 3px #000;
+   }
+   
+   footer .container a {
+		color: #000;
+		text-decoration: none;
+   }
+   
+   footer .container .linksList {
+		display: table;
+		padding:0;
+		margin:0 auto;
+		width: 100%;
+		text-align: center;
+   }
+   
+   footer .container .linksList li {
+		display: table-cell;
+		list-style: none;
+		padding: 0 2%;
+		vertical-align: middle;
+   }
+   
+   footer .container .linksList .footerCell{
+		text-align:left;
+		width: 50px;
+   }
+   
+   footer .container .linksList .footerCell img{
+		width: 100%;
+		border: 0;
+   }
+  
+
+/* ===========================
+   ====== Media Queries ====== 
+   =========================== */
+
+@media screen and (min-width: 1024px) {
+	.slide {
+		height: 768px;
+		overflow: hidden;
+	}
+	
+	/* ===========================
+   ===== intro  =====
+   =========================== */
+
+   #intro .background{
+		background-position: center, center;
+		background-size: cover;
+		height: 100%;
+	}
+	
+	#intro .container {
+		height: 100%;
+		padding: 0;
+	}
+	
+	#intro .container .container-inner {
+		height: 100%;
+		display: table;
+		margin: 0 auto;
+	}
+	
+	#intro .container header nav {
+		margin-top: 35px;
+	}
+	
+	#intro .container .reserve {
+		top: 148px;
+	}	
+
+	#intro .container  .productLogo{
+		width: 1000px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	#intro .container .productLogo  .slogan{
+		display: table-cell;
+	}
+	
+	#intro .container  .productLogo .productDescription {
+		display: table-cell;
+		padding: 0 40px;
+		text-align: left;
+		width:100%;
+		line-height: 1.6em;
+	}
+	
+	#intro .container  .productLogo .productDescription p {
+		font-size: 1.2em;
+	}
+	
+	#intro .container .reserve {
+		font-weight: normal;
+		line-height: 1.7em;
+		max-width: 233px;
+		padding: 8px 32px;
+	}
+	
+	#intro .container header nav ul li {
+		padding-left: 6%; 
+	}
+	
+	#intro .container header nav ul li a {
+		font-size: 1.2em; 
+	}
+	
+	/* ===========================
+   ===== Product  ===== 
+   =========================== */
+	
+	#product .container{
+		padding: 0;
+	}
+
+    #product .container .dispenserDescription {
+		width: 500px;
+	}
+   
+	#product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
+		color: #077CF5;
+		padding-left: 180px;
+	}
+	
+	#product .container .dispenserPhoto img{
+	width: 194px;
+}
+   
+	/* ===========================
+   ===== workDescription  =====
+   =========================== */
+	
+
+	#workDescription .background {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+
+	#workDescription .container {
+		display: table;
+		float: right;
+		width: 920px;
+		height: 100%;
+
+		padding: 0;
+
+		background: rgba(255, 255, 255, 0.85);
+
+		text-align: left;
+	}
+
+	#workDescription .container .container-inner {
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+
+		background: none;
+
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+	}
+
+	#workDescription .container h2 {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#workDescription .container p {
+	font-size: 1em;
+}
+
+	#workDescription .container .row {
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	#workDescription .container .cell {
+		display: inline-block;
+		width: 350px;
+
+		padding: 10px 40px;
+
+		vertical-align: top;
+
+		text-align: left;
+	}
+
+	#workDescription .container .annotation {
+		float: right;
+		width: 205px;
+		margin-right: 197px;
+	}
+
+	/* ===========================
+   ===== creatorsStory  =====
+   =========================== */
+	#creatorsStory {
+
+	}
+
+	#creatorsStory .container {
+		display: table;
+		height: 100%;
+		text-align: center;
+	}
+
+	#creatorsStory .container .container-inner {
+		display: table-cell;
+		vertical-align: middle;
+		width: 900px;
+
+	}
+
+	#creatorsStory .container .description, #creatorsStory .container .story-list {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	#creatorsStory .container .description {
+		width: 310px;
+		text-align: right;
+	}
+
+	#creatorsStory .container .story-list {
+		width: 500px;
+		padding-left: 90px;
+	}
+
+	#creatorsStory .container .story-list .thumbnail {
+		width: 200px;
+	}
+	
+	 /* ===========================
+   ===== Footer  =====
+   =========================== */
+   
+   footer .container .linksList .copyright {
+		font-size: 0.5em;
+		color: #656565;
+		font-family: Gotham-Book;
+   }
+   
+   footer .container .linksList .footerCell{
+		width: 75px;
+   }
+   
+}
+
+@media screen and (max-width: 540px) {
+
+	/* ===========================
+   ===== Product  ===== 
+   =========================== */
+	
+	body {
+		font-size: 11.6pt;
+	}
+	
+	#intro .container header nav ul {
+
+	}
+	
+	#intro .container .reserve {
+		max-width: 126px;
+	}
+	
+	#intro .container .productLogo {
+		width: 240px;
+	}
+	
+	#product .container .dispenserPhoto img{
+		width: 80px;
+	}
+
+	#product .container .dispenserDescription p {
+		padding-left: 20px;
+	}
+	
+	#creatorsStory .container .story-list .thumbnail {
+		width: 120px;
+	}
+	
+	#creatorsStory .container .story-list p {
+		font-size: 0.7em;
+		padding-left: 20px;
+	}
+	
+	footer .container .linksList .footerCell{
+		width: 35px;
+   }
+}

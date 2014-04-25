@@ -1,0 +1,38 @@
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px), (max-width: 767px) {
+
+	.rd-desktop-inline, .rd-desktop-block , .rd-desktop-table{
+		display: none !important;
+	}
+
+	.rd-mobile-block {
+		display: block !important;
+	}
+
+	.rd-mobile-inline {
+		display: inline-block !important;
+	}
+	
+	.rd-mobile-table {
+		display: table !important;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.rd-mobile-inline, .rd-mobile-block, .rd-mobile-table {
+		display: none !important;
+	}
+
+	.rd-desktop-block {
+		display: block !important;
+	}
+	
+	.rd-desktop-inline {
+		display: inline-block !important;
+	}
+	
+	.rd-desktop-table {
+		display: table !important;
+	}
+}
