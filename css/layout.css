@@ -347,6 +347,7 @@ a:visited {
 		padding:0;
 		margin:0 auto;
 		width: 100%;
+		text-align: center;
    }
    
    #news .container .newsList li {
@@ -358,7 +359,7 @@ a:visited {
    
    #news .container .newsList .newsLogo img{
 		max-width:100%;
-		width:100%;
+		width: auto;
 		border: 0;
    }
    
