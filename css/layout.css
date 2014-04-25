@@ -182,7 +182,6 @@ a:visited {
 	line-height: 1.2em;
 	padding: 0 4px;
 	text-align: left;
-	margin-top: 20px;
 }
 
 #intro .container .productLogo .productDescription p {
@@ -258,7 +257,7 @@ a:visited {
 }
 
 #workDescription .container a {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #workDescription .container .container-inner {
