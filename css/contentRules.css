@@ -36,3 +36,46 @@
 		display: table !important;
 	}
 }
+
+
+@media screen and (max-width: 767px) {
+	.rd-tablet {
+		display: none !important;
+	}
+
+	.rd-desktop {
+		display: none !important;
+	}
+
+	.rd-phone {
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.rd-phone {
+		display: none !important;
+	}
+
+	.rd-desktop {
+		display: none !important;
+	}
+
+	.rd-tablet {
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.rd-phone {
+		display: none !important;
+	}
+
+	.rd-tablet {
+		display: none !important;
+	}
+
+	.rd-desktop {
+		display: block !important;
+	}
+}
