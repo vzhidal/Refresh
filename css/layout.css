@@ -4,29 +4,20 @@
 
 @font-face {
 	font-family: Gotham;
-    src: url('../css/fonts/Gotham-Bold.eot');
-    src: url('../css/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/Gotham-Bold.woff') format('woff'),
-         url('../css/fonts/Gotham-Bold.ttf') format('truetype'),
-         url('../css/fonts/Gotham-Bold.svg#josefin_sansbold') format('svg');
+	src: url('../css/fonts/Gotham-Bold.eot');
+	src: url('../css/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Gotham-Bold.woff') format('woff'), url('../css/fonts/Gotham-Bold.ttf') format('truetype'), url('../css/fonts/Gotham-Bold.svg#josefin_sansbold') format('svg');
 }
 
 @font-face {
 	font-family: JosephinSans;
-    src: url('../css/fonts/josefinsans-bold-webfont.eot');
-    src: url('../css/fonts/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/josefinsans-bold-webfont.woff') format('woff'),
-         url('../css/fonts/josefinsans-bold-webfont.ttf') format('truetype'),
-         url('../css/fonts/josefinsans-bold-webfont.svg#josefin_sansbold') format('svg');
+	src: url('../css/fonts/josefinsans-bold-webfont.eot');
+	src: url('../css/fonts/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/josefinsans-bold-webfont.woff') format('woff'), url('../css/fonts/josefinsans-bold-webfont.ttf') format('truetype'), url('../css/fonts/josefinsans-bold-webfont.svg#josefin_sansbold') format('svg');
 }
 
 @font-face {
-    font-family: Gotham-Book;
-    src: url('../css/fonts/Gotham-Book.eot');
-    src: url('../css/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-    url('../css/fonts/Gotham-Book.woff') format('woff'),
-    url('../css/fonts/Gotham-Book.ttf') format('truetype'),
-    url('../css/fonts/Gotham-Book.svg#josefin_sansbold') format('svg');
+	font-family: Gotham-Book;
+	src: url('../css/fonts/Gotham-Book.eot');
+	src: url('../css/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Gotham-Book.woff') format('woff'), url('../css/fonts/Gotham-Book.ttf') format('truetype'), url('../css/fonts/Gotham-Book.svg#josefin_sansbold') format('svg');
 }
 
 /* ===========================
@@ -45,8 +36,8 @@ body {
 }
 
 .slide {
-		min-height: 480px;
-	}
+	min-height: 480px;
+}
 
 /* ===========================
    ========= Headings ======== 
@@ -91,23 +82,33 @@ a:link {
 a:visited {
 }
 
+.main-section {
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+	position: relative;
+	background: white;
+}
+.main-section .section-content {
+	position: relative;
+	z-index: 1;
+}
+
 /* ===========================
    ===== Intro  ===== 
    =========================== */
 
-   
 #intro h1, #intro h2, #intro h3, #intro h4, #intro h5 {
 	margin: 0px;
 	padding: 0px;
 }
-   
-#intro .background{
+
+#intro .background {
 	background-image: url(../images/bg/sky.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: auto;
 	overflow: hidden;
-	height:100%;
+	height: 100%;
 }
 
 #intro .container {
@@ -115,11 +116,11 @@ a:visited {
 	margin: 0;
 }
 
-#intro .container , #intro .container  a{
+#intro .container, #intro .container a {
 	color: #254ea6;
 }
 
-#intro .container  a {
+#intro .container a {
 	text-decoration: none;
 }
 
@@ -145,19 +146,20 @@ a:visited {
 #intro .container h2 {
 	font-family: JosephinSans;
 }
+
 #intro .container .reserve {
 	position: absolute;
 	right: 0;
 	top: 120px;
 	max-width: 174px;
 	background-color: #FF005C;
-    border-radius: 20px 0 0 20px;
-    color: #FFFFFF;
-    font-size: 0.79em;
+	border-radius: 20px 0 0 20px;
+	color: #FFFFFF;
+	font-size: 0.79em;
 	font-weight: bold;
-    line-height: 1.2em;
-    padding: 3px 30px;
-    text-align: left;
+	line-height: 1.2em;
+	padding: 3px 30px;
+	text-align: left;
 	box-shadow: 0px 1px 15px #000000;
 }
 
@@ -178,8 +180,8 @@ a:visited {
 
 #intro .container .productLogo .productDescription {
 	line-height: 1.2em;
-    padding: 0 4px;
-    text-align: left;
+	padding: 0 4px;
+	text-align: left;
 	margin-top: 20px;
 }
 
@@ -192,30 +194,30 @@ a:visited {
    ===== Product  ===== 
    =========================== */
 #product {
-	
+
 }
 
-#product .container{
+#product .container {
 	margin: 0 auto;
 	padding: 125px 0;
 	display: table;
 	height: 100%;
 }
 
-#product .container .container-inner{
+#product .container .container-inner {
 	display: table-cell;
 	vertical-align: middle;
 }
 
-#product .container .dispenserPhoto{
+#product .container .dispenserPhoto {
 	display: table-cell;
 }
 
-#product .container .dispenserPhoto img{
+#product .container .dispenserPhoto img {
 	width: 165px;
 }
 
-#product .container .dispenserDescription{
+#product .container .dispenserDescription {
 	display: table-cell;
 	vertical-align: middle;
 	width: 280px;
@@ -232,8 +234,8 @@ a:visited {
    =========================== */
 
 #workDescription {
-		font-size: 0.7em;
-	}
+	font-size: 0.7em;
+}
 
 #workDescription .background {
 	background: url("../images/bg/fruits.jpg");
@@ -290,7 +292,8 @@ a:visited {
 
 #creatorsStory .container .description p {
 	font-size: 1.25em;
-} 
+}
+
 #creatorsStory .container .story-list {
 	margin: 0;
 	padding: 0;
@@ -329,85 +332,84 @@ a:visited {
    ===== News  =====
    =========================== */
 
-   #news {
-   
-   }
-   
-   #news .container {
-		padding: 10% 20px;
-		margin: 0 auto;
-   }
-   
-   #news .container .container-inner {
-		
-   }
-   
-   #news .container .newsList {
-		display: table;
-		padding:0;
-		margin:0 auto;
-		width: 100%;
-   }
-   
-   #news .container .newsList li {
-		display: table-cell;
-		list-style: none;
-		padding: 0 2%;
-		vertical-align: middle;
-   }
-   
-   #news .container .newsList .newsLogo img{
-		max-width:100%;
-		width:100%;
-		border: 0;
-   }
-   
-   /* ===========================
+#news {
+
+}
+
+#news .container {
+	padding: 10% 20px;
+	margin: 0 auto;
+}
+
+#news .container .container-inner {
+
+}
+
+#news .container .newsList {
+	display: table;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#news .container .newsList li {
+	display: table-cell;
+	list-style: none;
+	padding: 0 2%;
+	vertical-align: middle;
+}
+
+#news .container .newsList .newsLogo img {
+	max-width: 100%;
+	width: 100%;
+	border: 0;
+}
+
+/* ===========================
    ===== Footer  =====
    =========================== */
 
-   footer {
-   
-   }
-   
-   footer .container {
-		padding: 2.5% 20px;
-		margin: 0px 0;
-		border:0;   
-		border-top:1px solid #ccc;
-		box-shadow: 0px 0px 3px #000;
-   }
-   
-   footer .container a {
-		color: #000;
-		text-decoration: none;
-   }
-   
-   footer .container .linksList {
-		display: table;
-		padding:0;
-		margin:0 auto;
-		width: 100%;
-		text-align: center;
-   }
-   
-   footer .container .linksList li {
-		display: table-cell;
-		list-style: none;
-		padding: 0 2%;
-		vertical-align: middle;
-   }
-   
-   footer .container .linksList .footerCell{
-		text-align:left;
-		width: 50px;
-   }
-   
-   footer .container .linksList .footerCell img{
-		width: 100%;
-		border: 0;
-   }
-  
+footer {
+
+}
+
+footer .container {
+	padding: 2.5% 20px;
+	margin: 0px 0;
+	border: 0;
+	border-top: 1px solid #ccc;
+	box-shadow: 0px 0px 3px #000;
+}
+
+footer .container a {
+	color: #000;
+	text-decoration: none;
+}
+
+footer .container .linksList {
+	display: table;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+footer .container .linksList li {
+	display: table-cell;
+	list-style: none;
+	padding: 0 2%;
+	vertical-align: middle;
+}
+
+footer .container .linksList .footerCell {
+	text-align: left;
+	width: 50px;
+}
+
+footer .container .linksList .footerCell img {
+	width: 100%;
+	border: 0;
+}
 
 /* ===========================
    ====== Media Queries ====== 
@@ -415,107 +417,102 @@ a:visited {
 
 @media screen and (min-width: 1024px) {
 	.slide {
-		height: 768px;
 		overflow: hidden;
+		height: 100%;
 	}
-	
+
 	/* ===========================
    ===== intro  =====
    =========================== */
-
-   #intro .background{
+	#intro .background {
 		background-position: center, center;
 		background-size: cover;
 		height: 100%;
 	}
-	
+
 	#intro .container {
 		height: 100%;
 		padding: 0;
 	}
-	
+
 	#intro .container .container-inner {
 		height: 100%;
 		display: table;
 		margin: 0 auto;
 	}
-	
+
 	#intro .container header nav {
 		margin-top: 35px;
 	}
-	
+
 	#intro .container .reserve {
 		top: 148px;
-	}	
+	}
 
-	#intro .container  .productLogo{
+	#intro .container .productLogo {
 		width: 1000px;
 		display: table-cell;
 		vertical-align: middle;
 	}
-	
-	#intro .container .productLogo  .slogan{
+
+	#intro .container .productLogo .slogan {
 		display: table-cell;
 	}
-	
-	#intro .container  .productLogo .productDescription {
+
+	#intro .container .productLogo .productDescription {
 		display: table-cell;
 		padding: 0 40px;
 		text-align: left;
-		width:100%;
+		width: 100%;
 		line-height: 1.6em;
 	}
-	
-	#intro .container  .productLogo .productDescription p {
+
+	#intro .container .productLogo .productDescription p {
 		font-size: 1.2em;
 	}
-	
+
 	#intro .container .reserve {
 		font-weight: normal;
 		line-height: 1.7em;
 		max-width: 233px;
 		padding: 8px 32px;
 	}
-	
+
 	#intro .container header nav ul li {
-		padding-left: 6%; 
+		padding-left: 6%;
 	}
-	
+
 	#intro .container header nav ul li a {
-		font-size: 1.2em; 
+		font-size: 1.2em;
 	}
-	
+
 	/* ===========================
    ===== Product  ===== 
    =========================== */
-	
-	#product .container{
+	#product .container {
 		padding: 0;
 	}
 
-    #product .container .dispenserDescription {
+	#product .container .dispenserDescription {
 		width: 500px;
 	}
-   
+
 	#product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
 		color: #077CF5;
 		padding-left: 180px;
 	}
-	
-	#product .container .dispenserPhoto img{
-	width: 194px;
-}
-   
+
+	#product .container .dispenserPhoto img {
+		width: 194px;
+	}
+
 	/* ===========================
    ===== workDescription  =====
    =========================== */
-	
-
 	#workDescription .background {
 		height: 100%;
 		overflow: hidden;
 	}
-	
 
 	#workDescription .container {
 		display: table;
@@ -547,10 +544,10 @@ a:visited {
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	#workDescription .container p {
-	font-size: 1em;
-}
+		font-size: 1em;
+	}
 
 	#workDescription .container .row {
 		padding-top: 40px;
@@ -612,21 +609,20 @@ a:visited {
 	#creatorsStory .container .story-list .thumbnail {
 		width: 200px;
 	}
-	
-	 /* ===========================
+
+	/* ===========================
    ===== Footer  =====
    =========================== */
-   
-   footer .container .linksList .copyright {
+	footer .container .linksList .copyright {
 		font-size: 0.5em;
 		color: #656565;
 		font-family: Gotham-Book;
-   }
-   
-   footer .container .linksList .footerCell{
+	}
+
+	footer .container .linksList .footerCell {
 		width: 75px;
-   }
-   
+	}
+
 }
 
 @media screen and (max-width: 540px) {
@@ -634,41 +630,40 @@ a:visited {
 	/* ===========================
    ===== Product  ===== 
    =========================== */
-	
 	body {
 		font-size: 11.6pt;
 	}
-	
+
 	#intro .container header nav ul {
 
 	}
-	
+
 	#intro .container .reserve {
 		max-width: 126px;
 	}
-	
+
 	#intro .container .productLogo {
 		width: 240px;
 	}
-	
-	#product .container .dispenserPhoto img{
+
+	#product .container .dispenserPhoto img {
 		width: 80px;
 	}
 
 	#product .container .dispenserDescription p {
 		padding-left: 20px;
 	}
-	
+
 	#creatorsStory .container .story-list .thumbnail {
 		width: 120px;
 	}
-	
+
 	#creatorsStory .container .story-list p {
 		font-size: 0.7em;
 		padding-left: 20px;
 	}
-	
-	footer .container .linksList .footerCell{
+
+	footer .container .linksList .footerCell {
 		width: 35px;
-   }
+	}
 }
