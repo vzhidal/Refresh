@@ -11,10 +11,7 @@ $(function () {
 	});
 	InitCurtain();
 
-	$('.slide-nav-link').on('click', function (e) {
-		e.preventDefault();
-
-		var slide = $($(this).attr('href'));
+	function scrollToSlide(slide) {
 		if(slide.length) {
 			var scrollVal = 0;
 			var wrap = slide.data('ds-curtain-parent');
@@ -25,6 +22,16 @@ $(function () {
 			}
 			$('html,body').animate({'scrollTop': scrollVal});
 		}
+	}
+
+	if(window.location.hash){
+		var slide = $(window.location.hash);
+		scrollToSlide(slide);
+	}
+
+	$('.slide-nav-link').on('click', function (e) {
+		var slide = $($(this).attr('href'));
+		scrollToSlide(slide);
 	});
 
 	$(window).on('scroll', CheckPager);
