@@ -106,7 +106,7 @@ a:visited {
 	background-image: url(../images/bg/sky.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: auto;
+	background-size: cover;
 	overflow: hidden;
 	height: 100%;
 }
@@ -199,7 +199,7 @@ a:visited {
 
 #product .container {
 	margin: 0 auto;
-	padding: 125px 0;
+	padding: 125px 20px;
 	display: table;
 	height: 100%;
 }
@@ -337,7 +337,7 @@ a:visited {
 }
 
 #news .container {
-	padding: 10% 20px;
+	padding: 30px 20px;
 	margin: 0 auto;
 }
 
@@ -613,6 +613,10 @@ footer .container .linksList .footerCell img {
 
 	#creatorsStory .container .story-list .thumbnail {
 		width: 200px;
+	}
+
+	#news .container {
+		padding: 90px 20px;
 	}
 
 	/* ===========================
