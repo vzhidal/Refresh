@@ -1,43 +1,66 @@
-@media screen and (max-width: 767px) {
-	.rd-tablet {
+/* =======================================
+   ======= Responsive content rules ====== 
+   ======================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1023px), (max-width: 767px) {
+
+	.rd-desktop-inline, .rd-desktop-block , .rd-desktop-table, .rd-desktop-inline-block{
 		display: none !important;
 	}
 
-	.rd-desktop {
-		display: none !important;
-	}
-
-	.rd-phone {
+	.rd-mobile-block {
 		display: block !important;
 	}
-}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-	.rd-phone {
-		display: none !important;
+	.rd-mobile-inline {
+		display: inline !important;
 	}
-
-	.rd-desktop {
-		display: none !important;
+	
+	.rd-mobile-inline-block {
+		display: inline-block !important;
 	}
-
-	.rd-tablet {
-		display: block !important;
+	
+	.rd-mobile-table {
+		display: table !important;
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	.rd-phone {
+	.rd-mobile-inline, .rd-mobile-block, .rd-mobile-table , .rd-mobile-inline-block{
 		display: none !important;
 	}
 
-	.rd-tablet {
-		display: none !important;
-	}
-
-	.rd-desktop {
+	.rd-desktop-block {
 		display: block !important;
 	}
+	
+	.rd-desktop-inline {
+		display: inline !important;
+	}
+	
+	.rd-desktop-inline-block {
+		display: inline-block !important;
+	}
+	
+	.rd-desktop-table {
+		display: table !important;
+	}
+}
+
+/* ===========================
+   ======= Body style ========
+   =========================== */
+
+body {
+	padding: 0;
+	margin: 0;
+
+	font-size: 16pt;
+	font-family: Gotham;
+
+	/* smooth font */
+	-webkit-font-smoothing: antialiased;
+	/* end smooth font */
 }
 
 ::-webkit-input-placeholder {
@@ -62,58 +85,6 @@ input[type="text"], textarea, select {
 	font-family: Gotham;
 }
 
-/* ===========================
-   ======= Body style ========
-   =========================== */
-
-body {
-	padding: 0;
-	margin: 0;
-
-	font-size: 16pt;
-	font-family: Gotham;
-
-	/* smooth font */
-	-webkit-font-smoothing: antialiased;
-	/* end smooth font */
-}
-
-/* ===========================
-   ========= Headings ========
-   =========================== */
-
-h1 {
-	font-size: 4.3em;
-}
-
-h2 {
-	font-size: 1.75em;
-	font-family: JosephinSans;
-}
-
-h3 {
-	font-size: 1.15em;
-}
-
-/* ===========================
-   ======= Anchor style ======
-   =========================== */
-
-a {
-}
-
-a:hover {
-}
-
-a:active {
-}
-
-a:link {
-}
-
-a:visited {
-}
-
 select option {
 	color: black;
 }
@@ -130,3 +101,29 @@ select.empty {
 select option[disabled]:first-child {
 	display: none;
 }
+
+/* ===========================
+   ========= Headings ========
+   =========================== */
+
+h1 {
+	font-size: 4.3em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 0.9em;
+}
+
+

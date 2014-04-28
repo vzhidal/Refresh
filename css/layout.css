@@ -1,26 +1,4 @@
 /* ===========================
-   ======= Custom fonts ====== 
-   =========================== */
-
-@font-face {
-	font-family: Gotham;
-	src: url('../css/fonts/Gotham-Bold.eot');
-	src: url('../css/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Gotham-Bold.woff') format('woff'), url('../css/fonts/Gotham-Bold.ttf') format('truetype'), url('../css/fonts/Gotham-Bold.svg#josefin_sansbold') format('svg');
-}
-
-@font-face {
-	font-family: JosephinSans;
-	src: url('../css/fonts/josefinsans-bold-webfont.eot');
-	src: url('../css/fonts/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/josefinsans-bold-webfont.woff') format('woff'), url('../css/fonts/josefinsans-bold-webfont.ttf') format('truetype'), url('../css/fonts/josefinsans-bold-webfont.svg#josefin_sansbold') format('svg');
-}
-
-@font-face {
-	font-family: Gotham-Book;
-	src: url('../css/fonts/Gotham-Book.eot');
-	src: url('../css/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Gotham-Book.woff') format('woff'), url('../css/fonts/Gotham-Book.ttf') format('truetype'), url('../css/fonts/Gotham-Book.svg#josefin_sansbold') format('svg');
-}
-
-/* ===========================
    ======= Body style ======== 
    =========================== */
 
