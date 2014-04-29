@@ -3,7 +3,7 @@
    =========================== */
 
 body {
-	font-size: 16pt;
+	font-size: 11.6pt;
 	font-family: Gotham;
 	margin: 0;
 	padding: 0;
@@ -15,6 +15,10 @@ body {
 
 .slide {
 	min-height: 480px;
+}
+
+.slide.mobile {
+	height: 680px;
 }
 
 /* ===========================
@@ -84,10 +88,10 @@ a:visited {
 }
 
 #intro .background {
-	background-image: url(../images/bg/sky.jpg);
+	background-image: url(../images/bg/intro.jpg);
 	background-repeat: no-repeat;
-	background-position: top;
-	background-size: cover;
+	background-position: 53% top;
+	background-size: auto 110%;
 	overflow: hidden;
 	height: 100%;
 }
@@ -95,6 +99,7 @@ a:visited {
 #intro .container {
 	padding: 0;
 	margin: 0;
+	text-align: right;
 }
 
 #intro .container, #intro .container a {
@@ -105,12 +110,14 @@ a:visited {
 	text-decoration: none;
 }
 
-#intro .container .container-inner {
-
+#intro .container header {
+	display: table;
+	margin: 15px 20px;
 }
 
 #intro .container header nav {
-	margin-top: 25px;
+	display: table-cell;
+	vertical-align: top;
 }
 
 #intro .container header nav ul {
@@ -119,29 +126,35 @@ a:visited {
 }
 
 #intro .container header nav ul li {
-	display: inline;
-	padding-left: 6.5%;
+	display: inline-block;
+	font-size: 0.7em;
 	white-space: nowrap;
+	padding-left: 4%;
 }
 
 #intro .container h2 {
+	text-indent: 0.2em;
+	font-size: 1.06em;
 	font-family: JosephinSans;
+}
+
+#intro .container h1 {
+	font-size: 2.6em;
 }
 
 #intro .container .reserve {
 	position: absolute;
 	right: 0;
-	top: 120px;
-	max-width: 174px;
-	background-color: #FF005C;
-	border-radius: 20px 0 0 20px;
-	-moz-border-radius: 20px 0 0 20px;
-	-webkit-border-radius: 20px 0 0 20px;
+	bottom: 74px;
+	max-width: 158px;
+	border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 10px 0 0 10px;
 	color: #FFFFFF;
-	font-size: 0.79em;
-	font-weight: bold;
+	background-color: #FF005C;
+	font-size: 1em;
 	line-height: 1.2em;
-	padding: 3px 30px;
+	padding: 0px 20px 0px 27px;
 	text-align: left;
 	-moz-box-shadow: 0px 1px 15px #000000;
 	-webkit-box-shadow: 0px 1px 15px #000000;
@@ -149,33 +162,14 @@ a:visited {
 }
 
 #intro .container .productLogo {
-	margin: 300px auto 200px;
-	width: 320px;
-	text-align: justify;
-}
-
-#intro .container .productLogo .slogan {
-	line-height: 2.7em;
+	display: table-cell;
+	margin: 15px 10px 15px 20px;
+	width: 30%;
+	line-height: 1.5em;
 	white-space: nowrap;
-}
-
-#intro .container .productLogo .slogan h2 {
-	text-indent: 0.1em;
-}
-
-#intro .container .productLogo .productDescription {
-	line-height: 1.2em;
-	padding: 0 4px;
-	text-align: left;
-}
-
-#intro .container .productLogo .productDescription p {
-	margin: 0;
-	padding: 0;
-}
-
-#intro .container .productLogo .slogan, #intro .container .productLogo .productDescription {
 	vertical-align: top;
+	text-align: left;
+	padding-right: 30px;
 }
 
 /* ===========================
@@ -187,14 +181,14 @@ a:visited {
 
 #product .container {
 	margin: 0 auto;
-	padding: 125px 20px;
-	display: table;
+	padding: 0px 40px 70px 40px;
 	height: 100%;
 }
 
-#product .container .container-inner {
-	display: table-cell;
-	vertical-align: middle;
+#product .container .productInfo {
+	display: table;
+	margin: 0 auto;
+	padding-top: 40px; 
 }
 
 #product .container .dispenserPhoto {
@@ -202,19 +196,54 @@ a:visited {
 }
 
 #product .container .dispenserPhoto img {
-	width: 165px;
+	width: 160px;
 }
 
 #product .container .dispenserDescription {
 	display: table-cell;
-	vertical-align: middle;
-	width: 280px;
+	vertical-align: top;
+	width: 150px;
+	padding-top: 45px;
 }
 
-#product .container .dispenserDescription p {
+#product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
 	color: #FF005C;
 	text-align: left;
-	padding-left: 40px;
+}
+
+#product .container .newsList {
+	padding: 30px 0px 10px 0px;
+	margin: 0 auto;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#product .container .newsList ul {
+	display: table;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#product .container .newsList ul li {
+	display: table-cell;
+	list-style: none;
+	padding: 0 2%;
+	vertical-align: middle;
+}
+
+#product .container .newsList ul li.left {
+	padding: 0 2% 0 0;
+}
+
+#product .container .newsList ul li.right {
+	padding: 0 0 0 2%;
+}
+
+#product .container .newsList .newsLogo img {
+	max-width: 100%;
+	width: auto;
+	border: 0;
 }
 
 /* ===========================
@@ -283,6 +312,7 @@ a:visited {
 #creatorsStory .container .story-list {
 	margin: 0;
 	padding: 0;
+	
 }
 
 #creatorsStory .container .story-list li {
@@ -299,7 +329,7 @@ a:visited {
 }
 
 #creatorsStory .container .story-list .thumbnail {
-	width: 180px;
+	width: 120px;
 }
 
 #creatorsStory .container .story-list .thumbnail img {
@@ -308,47 +338,9 @@ a:visited {
 
 #creatorsStory .container .story-list p {
 	margin-top: 0;
-	padding-left: 40px;
-
-	font-size: 0.6em;
+	font-size: 0.7em;
+	padding-left: 20px;
 	text-align: left;
-}
-
-/* ===========================
-   ===== News  =====
-   =========================== */
-
-#news {
-
-}
-
-#news .container {
-	padding: 30px 20px;
-	margin: 0 auto;
-}
-
-#news .container .container-inner {
-
-}
-
-#news .container .newsList {
-	display: table;
-	padding: 0;
-	margin: 0 auto;
-	width: 100%;
-}
-
-#news .container .newsList li {
-	display: table-cell;
-	list-style: none;
-	padding: 0 2%;
-	vertical-align: middle;
-}
-
-#news .container .newsList .newsLogo img {
-	max-width: 100%;
-	width: 100%;
-	border: 0;
 }
 
 /* ===========================
@@ -360,7 +352,7 @@ footer {
 }
 
 footer .container {
-	padding: 10px 20px;
+	padding: 15px 20px 10px 20px;
 	margin: 0px 0;
 	border: 0;
 	border-top: 1px solid #ccc;
@@ -391,7 +383,7 @@ footer .container .linksList li {
 
 footer .container .linksList .footerCell {
 	text-align: left;
-	width: 50px;
+	width: 35px;
 }
 
 footer .container .linksList .footerCell img {
@@ -403,6 +395,66 @@ footer .container .linksList .footerCell img {
    ====== Media Queries ====== 
    =========================== */
 
+@media screen and (min-width: 540px) {
+	body {
+		font-size: 16pt;
+	}
+	
+	.slide.mobile {
+		height: 768px;
+	}
+	
+	/* ===========================
+   ===== Intro  ===== 
+   =========================== */
+
+	#intro .container .reserve {
+		max-width: 174px;
+		border-radius: 20px 0 0 20px;
+		-moz-border-radius: 20px 0 0 20px;
+		-webkit-border-radius: 20px 0 0 20px;
+		font-size: 0.8em;
+	}
+	
+	/* ===========================
+   ===== Product  ===== 
+   =========================== */
+	
+	#product .container .dispenserPhoto img {
+		width: 200px;
+	}
+	
+	#product .container .dispenserDescription {
+		width: 210px;
+		padding-top: 80px;
+	}
+	
+	#product .container .productInfo {
+		padding-top: 60px; 
+	}
+	
+	/* ===========================
+   ===== Creators story  ===== 
+   =========================== */
+
+	#creatorsStory .container .story-list .thumbnail {
+		width: 180px;
+	}
+
+	#creatorsStory .container .story-list p {
+		padding-left: 40px;
+		font-size: 0.6em;
+	}
+	
+	/* ===========================
+   ===== Footer  ===== 
+   =========================== */
+
+	footer .container .linksList .footerCell {
+		width: 50px;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.slide {
 		overflow: hidden;
@@ -410,92 +462,80 @@ footer .container .linksList .footerCell img {
 	}
 
 	.slide.mobile {
-		height: 768px;
+		height: 100%;
 	}
 
 	/* ===========================
    ===== intro  =====
    =========================== */
-	#intro .background {
-		background-position: center, center;
+   
+   #intro .background {
+		background-position: top;
 		background-size: cover;
 		height: 100%;
 	}
 
-	#intro .container {
-		height: 100%;
-		padding: 0;
+	#intro .container, #intro .container a {
+		color: #ffffff;
+	}
+	
+	#intro .container h1{
+		font-size: 4.3em;
+	}
+	
+	#intro .container h2{
+		font-size: 1.75em;
+		text-indent: 0.1em;
 	}
 
-	#intro .container .container-inner {
-		height: 100%;
+	#intro .container header {
 		display: table;
-		margin: 0 auto;
-	}
-
-	#intro .container header nav {
-		margin-top: 35px;
-	}
-
-	#intro .container .reserve {
-		top: 148px;
-	}
-
-	#intro .container .productLogo {
-		width: 1000px;
-		display: table-cell;
-		vertical-align: middle;
-	}
-
-	#intro .container .productLogo .slogan {
-		display: table-cell;
-	}
-
-	#intro .container .productLogo .productDescription {
-		display: table-cell;
-		padding: 2px 35px 0;
-		text-align: left;
-		width: 100%;
-		line-height: 1.6em;
-	}
-
-	#intro .container .productLogo .productDescription p {
-		font-size: 1.2em;
-	}
-
-	#intro .container .reserve {
-		font-weight: normal;
-		line-height: 1.7em;
-		max-width: 233px;
-		padding: 8px 32px;
+		margin: 35px 58px;
+		width: 92.5%;
 	}
 
 	#intro .container header nav ul li {
-		padding-left: 6%;
+		font-size: 1.15em;
 	}
 
-	#intro .container header nav ul li a {
-		font-size: 1.2em;
+	#intro .container .productLogo {
+		line-height: 2.9em;
+	}
+
+	#intro .container .reserve {
+		line-height: 1.7em;
+		max-width: 180px;
+		padding: 7px 35px;
+		font-size: 0.83em;
 	}
 
 	/* ===========================
    ===== Product  ===== 
    =========================== */
-	#product .container {
-		padding: 0;
+	
+	#news .container .newsList {
+		padding: 90px 20px;
+	}
+	
+	#product .container .productInfo {
+		padding-top: 100px; 
 	}
 
 	#product .container .dispenserDescription {
 		width: 500px;
 	}
 
-	#product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
-		color: #077CF5;
-		padding-left: 180px;
+	#product .container .dispenserDescription {
+		vertical-align: top;
+		padding-top: 95px;
+	}
+
+	#product .container .dispenserDescription h3 {
+		font-size: 2.0em;
 	}
 
 	#product .container .dispenserPhoto img {
-		width: 194px;
+		width: 290px;
 	}
 
 	/* ===========================
@@ -603,71 +643,29 @@ footer .container .linksList .footerCell img {
 		width: 200px;
 	}
 
-	#news .container {
-		padding: 90px 20px;
-	}
-
 	/* ===========================
    ===== Footer  =====
    =========================== */
 	footer .container {
-		padding: 20px;
+		padding: 42px 20px;
 	}
 
 	footer .container .linksList .copyright {
 		font-size: 0.5em;
-		color: #656565;
+		color: #5c5c5c;
 		font-family: Gotham-Book;
 	}
 
 	footer .container .linksList .footerCell {
 		width: 75px;
 	}
-
-}
-
-@media screen and (max-width: 540px) {
-
-	/* ===========================
-   ===== Product  ===== 
-   =========================== */
-	body {
-		font-size: 11.6pt;
+	
+	footer .container .linksList li {
+		padding: 0 3%;
 	}
-
-	#intro .container header nav ul {
-
-	}
-
-	#intro .container .reserve {
-		max-width: 126px;
-		border-radius: 10px 0 0 10px;
-		-moz-border-radius: 10px 0 0 10px;
-		-webkit-border-radius: 10px 0 0 10px;
-	}
-
-	#intro .container .productLogo {
-		width: 240px;
-	}
-
-	#product .container .dispenserPhoto img {
-		width: 80px;
-	}
-
-	#product .container .dispenserDescription p {
-		padding-left: 20px;
-	}
-
-	#creatorsStory .container .story-list .thumbnail {
-		width: 120px;
-	}
-
-	#creatorsStory .container .story-list p {
-		font-size: 0.7em;
-		padding-left: 20px;
-	}
-
-	footer .container .linksList .footerCell {
-		width: 35px;
+	
+	footer .container .linksList .footerCell img {
+		width: auto;
 	}
 }
+
