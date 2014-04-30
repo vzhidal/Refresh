@@ -14,7 +14,7 @@ body {
 }
 
 .slide {
-	min-height: 480px;
+		height: 100%;
 }
 
 .slide.mobile {
@@ -113,6 +113,7 @@ a:visited {
 #intro .container header {
 	display: table;
 	margin: 15px 20px;
+	width: 92.5%;
 }
 
 #intro .container header nav {
@@ -129,7 +130,7 @@ a:visited {
 	display: inline-block;
 	font-size: 0.7em;
 	white-space: nowrap;
-	padding-left: 4%;
+	padding-left: 3%;
 }
 
 #intro .container h2 {
@@ -140,6 +141,17 @@ a:visited {
 
 #intro .container h1 {
 	font-size: 2.6em;
+}
+
+#intro .container .productLogo {
+	display: table-cell;
+	margin: 15px 10px 15px 20px;
+	width: 30%;
+	line-height: 1.5em;
+	white-space: nowrap;
+	vertical-align: top;
+	text-align: left;
+	padding-right: 30px;
 }
 
 #intro .container .reserve {
@@ -161,17 +173,6 @@ a:visited {
 	box-shadow: 0px 1px 15px #000000;
 }
 
-#intro .container .productLogo {
-	display: table-cell;
-	margin: 15px 10px 15px 20px;
-	width: 30%;
-	line-height: 1.5em;
-	white-space: nowrap;
-	vertical-align: top;
-	text-align: left;
-	padding-right: 30px;
-}
-
 /* ===========================
    ===== Product  ===== 
    =========================== */
@@ -181,39 +182,18 @@ a:visited {
 
 #product .container {
 	margin: 0 auto;
-	padding: 0px 40px 70px 40px;
+	padding: 30px 20px 70px 20px;
 	height: 100%;
 }
 
 #product .container .productInfo {
 	display: table;
 	margin: 0 auto;
-	padding-top: 40px; 
-}
-
-#product .container .dispenserPhoto {
-	display: table-cell;
-}
-
-#product .container .dispenserPhoto img {
-	width: 160px;
-}
-
-#product .container .dispenserDescription {
-	display: table-cell;
-	vertical-align: top;
-	width: 150px;
-	padding-top: 45px;
-}
-
-#product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
-	color: #FF005C;
-	text-align: left;
+	padding-top: 70px; 
 }
 
 #product .container .newsList {
-	padding: 30px 0px 10px 0px;
-	margin: 0 auto;
+	padding: 0px 0px 10px 0px;
 	border: 0;
 	border-bottom: 1px solid #ccc;
 }
@@ -240,10 +220,34 @@ a:visited {
 	padding: 0 0 0 2%;
 }
 
-#product .container .newsList .newsLogo img {
+#product .container .newsList a {
+	display: inline-block;
+}
+
+#product .container .newsList a img {
 	max-width: 100%;
 	width: auto;
 	border: 0;
+}
+
+#product .container .dispenserPhoto {
+	display: table-cell;
+}
+
+#product .container .dispenserPhoto img {
+	width: 160px;
+}
+
+#product .container .dispenserDescription {
+	display: table-cell;
+	vertical-align: top;
+	width: 150px;
+	padding-top: 45px;
+}
+
+#product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
+	color: #FF005C;
+	text-align: left;
 }
 
 /* ===========================
@@ -306,7 +310,7 @@ a:visited {
 }
 
 #creatorsStory .container .description p {
-	font-size: 1.25em;
+	font-size: 1.3em;
 }
 
 #creatorsStory .container .story-list {
@@ -329,11 +333,11 @@ a:visited {
 }
 
 #creatorsStory .container .story-list .thumbnail {
-	width: 120px;
+	
 }
 
 #creatorsStory .container .story-list .thumbnail img {
-	width: 100%;
+	width: 120px;
 }
 
 #creatorsStory .container .story-list p {
@@ -352,13 +356,14 @@ footer {
 }
 
 footer .container {
-	padding: 15px 20px 10px 20px;
+	padding: 15px 20px 5px 20px;
 	margin: 0px 0;
 	border: 0;
 	border-top: 1px solid #ccc;
-	box-shadow: 0px 0px 3px #000;
-	-moz-box-shadow: 0px 0px 3px #000;
-	-webkit-box-shadow: 0px 0px 3px #000;
+	box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	-moz-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	-webkit-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	height: 40px;
 }
 
 footer .container a {
@@ -372,6 +377,7 @@ footer .container .linksList {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
+	height: 100%;
 }
 
 footer .container .linksList li {
@@ -381,12 +387,12 @@ footer .container .linksList li {
 	vertical-align: middle;
 }
 
-footer .container .linksList .footerCell {
-	text-align: left;
+footer .container .linksList .imageCell{
 	width: 35px;
+	display: inline-block;
 }
 
-footer .container .linksList .footerCell img {
+footer .container .linksList .imageCell img {
 	width: 100%;
 	border: 0;
 }
@@ -401,7 +407,7 @@ footer .container .linksList .footerCell img {
 	}
 	
 	.slide.mobile {
-		height: 768px;
+		height: 868px;
 	}
 	
 	/* ===========================
@@ -416,28 +422,36 @@ footer .container .linksList .footerCell img {
 		font-size: 0.8em;
 	}
 	
+	#intro .container h2 {
+		text-indent: 0;
+	}
+	
 	/* ===========================
    ===== Product  ===== 
    =========================== */
+   
+    #product .container .productInfo {
+		padding-top: 120px; 
+	}
+	
+	#product .container .newsList {
+		padding: 0px 0px 20px 0px;
+	}
 	
 	#product .container .dispenserPhoto img {
-		width: 200px;
+		width: 250px;
 	}
 	
 	#product .container .dispenserDescription {
 		width: 210px;
-		padding-top: 80px;
-	}
-	
-	#product .container .productInfo {
-		padding-top: 60px; 
+		padding: 110px 0px 0px 25px;
 	}
 	
 	/* ===========================
    ===== Creators story  ===== 
    =========================== */
 
-	#creatorsStory .container .story-list .thumbnail {
+	#creatorsStory .container .story-list .thumbnail img {
 		width: 180px;
 	}
 
@@ -449,18 +463,18 @@ footer .container .linksList .footerCell img {
 	/* ===========================
    ===== Footer  ===== 
    =========================== */
-
-	footer .container .linksList .footerCell {
+	
+	footer .container {
+		height: 55px;
+		padding: 20px 20px 5px 20px;
+	}
+	
+	footer .container .linksList .imageCell {
 		width: 50px;
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	.slide {
-		overflow: hidden;
-		height: 100%;
-	}
-
 	.slide.mobile {
 		height: 100%;
 	}
@@ -489,13 +503,12 @@ footer .container .linksList .footerCell img {
 	}
 
 	#intro .container header {
-		display: table;
 		margin: 35px 58px;
-		width: 92.5%;
 	}
 
 	#intro .container header nav ul li {
 		font-size: 1.15em;
+		padding-left: 4%;
 	}
 
 	#intro .container .productLogo {
@@ -507,35 +520,32 @@ footer .container .linksList .footerCell img {
 		max-width: 180px;
 		padding: 7px 35px;
 		font-size: 0.83em;
+		bottom: 30px;
 	}
 
 	/* ===========================
    ===== Product  ===== 
    =========================== */
-	
-	#news .container .newsList {
-		padding: 90px 20px;
+   
+    #product .container .newsList {
+		padding: 0px 0px 30px 0px;
 	}
 	
 	#product .container .productInfo {
 		padding-top: 100px; 
 	}
-
+	
+	#product .container .dispenserPhoto img {
+		width: 290px;
+	}
+	
 	#product .container .dispenserDescription {
 		width: 500px;
-	}
-
-	#product .container .dispenserDescription {
-		vertical-align: top;
-		padding-top: 95px;
+		padding: 95px 0px 0px 90px;
 	}
 
 	#product .container .dispenserDescription h3 {
 		font-size: 2.0em;
-	}
-
-	#product .container .dispenserPhoto img {
-		width: 290px;
 	}
 
 	/* ===========================
@@ -614,14 +624,17 @@ footer .container .linksList .footerCell img {
 		display: table;
 		height: 100%;
 		text-align: center;
-		padding: 0 20px;
+		padding: 30px 20px 105px 20px;
+	}
+	
+	#creatorsStory .container h3 {
+		font-size: 2.2em;
+		margin: 80px 0 100px 0;
 	}
 
 	#creatorsStory .container .container-inner {
 		display: table-cell;
 		vertical-align: middle;
-		width: 900px;
-
 	}
 
 	#creatorsStory .container .description, #creatorsStory .container .story-list {
@@ -630,24 +643,36 @@ footer .container .linksList .footerCell img {
 	}
 
 	#creatorsStory .container .description {
-		width: 310px;
+		width: 380px;
 		text-align: right;
 	}
 
 	#creatorsStory .container .story-list {
-		width: 500px;
+		width: 652px;
 		padding-left: 90px;
 	}
 
-	#creatorsStory .container .story-list .thumbnail {
-		width: 200px;
+	#creatorsStory .container .story-list .thumbnail img{
+		width: auto;
+	}
+	
+	#creatorsStory .container .story-list p {
+		padding-left: 50px;
+		font-size: 0.7em;
 	}
 
 	/* ===========================
    ===== Footer  =====
    =========================== */
+	
 	footer .container {
-		padding: 42px 20px;
+		height: 120px;
+		padding: 0px 25px 0px 25px;
+	}
+	
+	footer .container .linksList .twitterCell {
+		text-align: left;
+		padding: 0 11% 0 3%;
 	}
 
 	footer .container .linksList .copyright {
@@ -656,16 +681,12 @@ footer .container .linksList .footerCell img {
 		font-family: Gotham-Book;
 	}
 
-	footer .container .linksList .footerCell {
-		width: 75px;
+	footer .container .linksList .imageCell {
+		width: 35px;
 	}
 	
 	footer .container .linksList li {
 		padding: 0 3%;
-	}
-	
-	footer .container .linksList .footerCell img {
-		width: auto;
 	}
 }
 
