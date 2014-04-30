@@ -225,8 +225,7 @@ a:visited {
 }
 
 #product .container .newsList a img {
-	max-width: 100%;
-	width: auto;
+	width: 100%;
 	border: 0;
 }
 
