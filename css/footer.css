@@ -1,0 +1,138 @@
+
+/* ===========================
+   ===== Footer  =====
+   =========================== */
+
+footer {
+
+}
+
+footer .container {
+    padding: 15px 20px 5px 20px;
+    margin: 0px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+    box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+    -moz-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+    -webkit-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+    height: 40px;
+}
+
+footer .container a {
+    color: #000;
+    text-decoration: none;
+    font-family: Gotham-Bold;
+    font-size: 0.83em;
+    letter-spacing: -1px;
+}
+
+footer .container a:hover{
+    text-decoration: underline;
+}
+
+footer .container .linksList {
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+footer .container .linksList li {
+    display: table-cell;
+    list-style: none;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+
+footer .container .linksList .imageCell{
+    width: 35px;
+    display: inline-block;
+}
+
+footer .container .linksList .imageCell img {
+    width: 100%;
+    border: 0;
+}
+
+
+@media screen and (min-width: 540px) {
+
+    /* ===========================
+   ===== Footer  =====
+   =========================== */
+
+    footer .container {
+        height: 55px;
+        padding: 20px 20px 5px 20px;
+    }
+
+    footer .container .linksList .imageCell {
+        width: 50px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* ===========================
+===== Footer  =====
+=========================== */
+
+    footer .container {
+        height: 120px;
+        padding: 0px 25px 0px 25px;
+    }
+
+    footer .container .linksList .twitterCell {
+        text-align: left;
+        padding: 0 11% 0 3%;
+    }
+
+    footer .container .linksList .copyright {
+        font-size: 0.5em;
+        color: #5c5c5c;
+        font-family: Gotham-Book;
+    }
+
+    footer .container .linksList .imageCell {
+        width: 35px;
+    }
+
+    footer .container .linksList li {
+        padding: 0 3%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    /* ===========================
+   ===== Footer  =====
+   =========================== */
+
+    footer .container {
+        height: 120px;
+        padding: 0px 25px 0px 25px;
+    }
+
+    footer .container .linksList .twitterCell {
+        text-align: left;
+        padding: 0 11% 0 3%;
+    }
+
+    footer .container .linksList .copyright {
+        font-size: 12px;
+        color: #5c5c5c;
+        font-family: Gotham-Book;
+    }
+
+    footer .container .linksList .imageCell {
+        width: 35px;
+    }
+
+    footer .container .linksList li {
+        padding: 0 3%;
+    }
+}

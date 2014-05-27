@@ -39,6 +39,7 @@ $(function () {
 });
 
 function CheckPager() {
+
 	$('.main-section').each(function (e) {
 		var slide = $(this);
 
@@ -51,6 +52,13 @@ function CheckPager() {
 		}
 
 		if($(window).scrollTop() >= scrollVal) {
+
+            if(slide.attr('id') == 'intro')
+                $('#toTheTopArrow').hide();
+            else
+            {
+                $('#toTheTopArrow').show();
+            }
 			$('.slide-pager a').removeClass('active');
 			$('.pager-link-' + slide.attr('id')).addClass('active');
 		}

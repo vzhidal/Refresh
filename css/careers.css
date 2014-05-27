@@ -2,75 +2,119 @@
    ======= form ======
    =========================== */
 .content {
-	height: 530px;
+	height: 1400px;
 	position: relative;
 	overflow: hidden;
 }
 
 .careers-content {
-	max-width: 480px;
-	padding: 0 10px;
+	max-width: 700px;
+	padding: 30px;
 	margin: 0 auto;
+    margin-top: 280px;
 	position: relative;
 	z-index: 1;
 	text-align: center;
+    background: #ffffff;
+    opacity: 0.85;
+    font-size: 20px;
+    font-family: Gotham-Book;
+}
+
+.careers-content ul li:before{ content:"-"; position:relative; left:-5px;}
+.careers-content ul li{ text-indent:-5px; list-style-type: none;}
+.careers-content div{
+    text-align: left;
+}
+.careers-content a{
+    color: #000000;
+}
+.careers-content .job-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.careers-content hr {
+    margin: 50px 70px 20px 70px;
 }
 
 .careers-content h3 {
-	color: #077cf5;
-	margin-bottom: 100px;
-	margin-top: 100px;
-	text-align: center;
-	font-size: 1.15em;
+    color: #f58500;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Gotham-Bold;
+    font-size: 28px;
 }
 
-.careers-content p {
-	font-size: 13px;
-	font-weight: 100;
+.careers-content p, .careers-content ul {
+    text-align: left;
+    font-size: 20px;
+    font-family: Gotham-Book;
+    line-height: 28px;
+    letter-spacing: 0px;
 }
+
 
 /* ===========================
    ======= bg ======
    =========================== */
 
 .bg-fruits {
-	height: 100%;
+	height: 1400px;
 	width: 100%;
-	position: absolute;
-	top: 0;
-}
-
-.bg-fruits-container {
-	height: 100%;
-	width: 100%;
-	max-width: 480px;
-	margin: 0 auto;
-	position: relative;
-}
-
-.bg-berries {
-	position: absolute;
-	top: 100px;
-	left: -102px;
-	height: 107px;
-	width: 203px;
-	background: url("../images/contactus/fruits/berries.png") no-repeat;
-
-}
-
-.bg-lemons {
 	position: absolute;
 	bottom: 0;
-	left: 50%;
-	margin-left: -297px;
-	height: 179px;
-	width: 593px;
-	background: url("../images/contactus/fruits/lemons.png") no-repeat;
+    z-index: -1;
+}
+
+.bg-oranges{
+    background: url("../images/contactus/oranges.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 400px) {
+    .careers-content {
+       font-size: 24px;
+    }
+    .careers-content h3 {
+        color: #f58500;
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+
+    .careers-content p, .careers-content ul {
+        text-align: left;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 0px;
+    }
 
 }
 
 @media screen and (min-width: 768px) {
+    .careers-content {
+        padding: 30px;
+    }
 	.careers-content {
 		text-align: left;
 	}
+
+    .careers-content h3 {
+        color: #f58500;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .careers-content p, .careers-content ul {
+        text-align: left;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -2px;
+        margin: 0;
+        margin-top: 20px;
+    }
 }

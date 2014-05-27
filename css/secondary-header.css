@@ -6,7 +6,7 @@ nav {
 	-moz-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
 	box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
-
+    font-family: Gotham-Bold;
 }
 
 nav ul {
@@ -42,14 +42,16 @@ nav ul li a {
 	}
 
 	.logo h1 {
-		margin: 0;
-		font-size: 70px;
+        font-family: Gotham-Bold;
+        margin: 0;
+		font-size: 74px;
 		line-height: 136px;
 	}
 
 	nav ul {
+        font-family: Gotham-Bold;
 		width: 530px;
 		height: 136px;
-		font-size: 18px;
+		font-size: 25px;
 	}
 }
