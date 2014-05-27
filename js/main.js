@@ -24,7 +24,7 @@ $(function () {
 		}
 	}
 
-	if(window.location.hash){
+	if(window.location.hash) {
 		var slide = $(window.location.hash);
 		scrollToSlide(slide);
 	}
@@ -149,7 +149,7 @@ function SetSlideHeight() {
 					slidePos.push(wrap.offset().top);
 
 					slide.css({
-						'z-index': totalSlides - i
+						'z-index': i
 					});
 				});
 
@@ -190,22 +190,22 @@ function SetSlideHeight() {
 		},
 		setScroll: function () {
 			if(init) {
-				for(var i in slides) {
+				for(var i = 0; i < slides.length; i++) {
 					var slide = slides[i];
 					var wrap = slide.data('ds-curtain-parent');
-					if($(window).scrollTop() >= slidePos[i]) {
-						slide.css({
-							'position': '',
-							'left': '',
-							'top': '',
-							'right': ''
-						});
-					} else {
+					if($(window).scrollTop() > slidePos[i] && $(window).scrollTop() <= slidePos[i + 1]) {
 						slide.css({
 							'position': 'fixed',
 							'left': '0',
 							'top': '0',
 							'right': '0'
+						});
+					} else {
+						slide.css({
+							'position': '',
+							'left': '',
+							'top': '',
+							'right': ''
 						});
 					}
 				}
