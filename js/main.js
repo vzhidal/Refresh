@@ -52,13 +52,7 @@ function CheckPager() {
 		}
 
 		if($(window).scrollTop() >= scrollVal) {
-
-            if(slide.attr('id') == 'intro')
-                $('#toTheTopArrow').hide();
-            else
-            {
-                $('#toTheTopArrow').show();
-            }
+            $('#toTheTopArrow').toggleClass("active", slide.attr('id') !== 'intro');
 			$('.slide-pager a').removeClass('active');
 			$('.pager-link-' + slide.attr('id')).addClass('active');
 		}
@@ -201,7 +195,7 @@ function SetSlideHeight() {
 				for(var i = 0; i < slides.length; i++) {
 					var slide = slides[i];
 					var wrap = slide.data('ds-curtain-parent');
-					if($(window).scrollTop() > slidePos[i] && $(window).scrollTop() <= slidePos[i + 1]) {
+					if($(window).scrollTop() >= slidePos[i] && $(window).scrollTop() <= slidePos[i + 1]) {
 						slide.css({
 							'position': 'fixed',
 							'left': '0',

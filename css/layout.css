@@ -827,13 +827,20 @@ footer .container .linksList .imageCell img {
     #toTheTopArrow{
         background-image: url(../images/arrow.png);
         width: 72px;
-        height: 71px;
+
         z-index: 10;
         position: fixed;
         right: 25px;
         bottom: 80px;
         cursor: pointer;
-        display: none;
+        height: 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+    }
+
+    #toTheTopArrow.active{
+        opacity: 1;
+        height: 71px;
     }
 
 	/* ===========================
