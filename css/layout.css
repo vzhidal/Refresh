@@ -835,7 +835,11 @@ footer .container .linksList .imageCell img {
         cursor: pointer;
         height: 0;
         opacity: 0;
-        -webkit-transition: opacity 0.5s;
+
+        -webkit-transition:opacity 0.5s;
+        -moz-transition:opacity 0.5s;
+        -o-transition:opacity 0.5s;
+        transition:opacity 0.5s;
     }
 
     #toTheTopArrow.active{
