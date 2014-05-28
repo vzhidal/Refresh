@@ -127,12 +127,12 @@ a:visited {
 	padding: 0;
 }
 
-#intro .container header nav ul li {
+#intro .container header  nav ul li {
 	display: block;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	white-space: nowrap;
-	padding-left: 3%;
-    padding-top: 1%;
+	padding-left: 2%;
+    padding-top: 4px;
 }
 
 #intro .container h2 {
@@ -269,7 +269,7 @@ a:visited {
     padding: 22px 16px;
     text-align: center;
     height: 100%;
-    min-height: 730px;
+    min-height: 540px;
 }
 
 #lessEnergy .container, #lessEnergy .container a {
@@ -298,26 +298,26 @@ a:visited {
 }
 
 #lessEnergy .right-column p {
-    font-size: 24px;
+    font-size: 14px;
     font-family: Gotham-Bold;
-    line-height: 34px;
+    line-height: 22px;
     letter-spacing: 0px;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 #lessEnergy .right-column h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: -1px;
     font-family: Gotham-Black;
-    margin-bottom: 36px;
-    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #lessEnergy .right-column h3, #lessEnergy .left-column .section-title {
-    font-size: 26px;
+    font-size: 17px;
     font-family: Gotham-Bold;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     display: inline-block;
     text-transform: uppercase;
     line-height: 30px;
@@ -328,10 +328,10 @@ a:visited {
 }
 
 #lessEnergy .right-column .annotation{
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 16px;
     letter-spacing: -1px;
-    margin-top: 60px;
+    margin-top: 37px;
 }
 
 #lessEnergy .left-column{
@@ -427,7 +427,7 @@ a:visited {
     text-align: center;
     height: 100%;
     display: table;
-    min-height: 730px;
+    min-height: 540px;
 }
 
 #flavorsForEveryone .container, #flavorsForEveryone .container a {
@@ -457,16 +457,17 @@ a:visited {
 }
 
 #flavorsForEveryone .right-column p {
-    font-size: 24px;
-    font-family: Gotham-Bold;
-    line-height: 34px;
+    font-size: 18px;
+    font-family: Gotham-Book;
+    line-height: 23px;
     letter-spacing: 0px;
+    margin: 0;
 }
 
 #flavorsForEveryone .left-column .section-title, #flavorsForEveryone .right-column h3 {
-    font-size: 26px;
+    font-size: 17px;
     font-family: Gotham-Bold;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
     display: inline-block;
     text-transform: uppercase;
     line-height: 30px;
@@ -511,7 +512,7 @@ a:visited {
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 #convenientAccess .right-column{
@@ -523,20 +524,21 @@ a:visited {
 }
 
 #convenientAccess .right-column p {
-    font-size: 24px;
+    font-size: 18px;
     font-family: Gotham-Book;
-    line-height: 34px;
-    letter-spacing: -2px;
+    line-height: 23px;
+    letter-spacing: 0px;
 }
 
 #convenientAccess .left-column .section-title, #convenientAccess .right-column h3 {
-    font-size: 26px;
+    font-size: 17px;
     font-family: Gotham-Bold;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     display: inline-block;
     text-transform: uppercase;
     line-height: 30px;
 }
+
 
 #convenientAccess .left-column{
    display: table-cell;
@@ -664,7 +666,7 @@ footer .container a {
 	color: #000;
 	text-decoration: none;
     font-family: Gotham-Bold;
-    font-size: 0.83em;
+    font-size: 0.81em;
     letter-spacing: -1px;
 }
 footer .container a:hover {
@@ -706,6 +708,34 @@ footer .container .linksList .imageCell img {
         display: inline-block;
     }
 
+    #lessEnergy .container {
+        min-height: 730px;
+    }
+
+    #lessEnergy .right-column p {
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 25px;
+    }
+
+    #lessEnergy .right-column h2 {
+        font-size: 30px;
+        letter-spacing: -1px;
+        margin-bottom: 36px;
+        margin-top: 15px;
+    }
+
+    #lessEnergy .right-column h3, #lessEnergy .left-column .section-title {
+        font-size: 26px;
+        letter-spacing: -2px;
+    }
+
+    #lessEnergy .right-column .annotation{
+        font-size: 17px;
+        line-height: 22px;
+        margin-top: 60px;
+    }
+
     #containersOptional .container .container-inner {
         padding-left: 20px;
         padding-top: 60px;
@@ -731,6 +761,33 @@ footer .container .linksList .imageCell img {
 
     #containersOptional .left-column img{
         margin-left: -225px;
+    }
+
+    #flavorsForEveryone .container {
+        min-height: 730px;
+    }
+
+    #flavorsForEveryone .right-column p {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    #flavorsForEveryone .left-column .section-title, #flavorsForEveryone .right-column h3 {
+        font-size: 26px;
+        letter-spacing: 0px;
+        line-height: 30px;
+    }
+
+
+    #convenientAccess .right-column p {
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -2px;
+    }
+
+    #convenientAccess .left-column .section-title, #convenientAccess .right-column h3 {
+        font-size: 26px;
+        letter-spacing: -2px;
     }
 
 
@@ -812,7 +869,7 @@ footer .container .linksList .imageCell img {
 	}
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 650px) {
 
     #intro .container header nav ul li {
         display: inline-block;
@@ -879,7 +936,8 @@ footer .container .linksList .imageCell img {
 	#intro .container header nav ul li {
         font-family: Gotham-Bold;
 		font-size: 25px;
-		padding-left: 4%;
+		padding-left: 2%;
+        margin-top: -15px;
 	}
 
 	#intro .container .productLogo {
