@@ -4,12 +4,13 @@
 
 body {
 	font-size: 11.6pt;
-	font-family: Gotham;
+	font-family: Gotham-Bold;
 	margin: 0;
 	padding: 0;
 
 	/* smooth font */
 	-webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
 	/* end smooth font */
 }
 
@@ -128,20 +129,23 @@ a:visited {
 }
 
 #intro .container header  nav ul li {
+    font-family: Gotham-Bold;
 	display: block;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	white-space: nowrap;
 	padding-left: 2%;
-    padding-top: 4px;
+    padding-top: 5px;
 }
 
 #intro .container h2 {
 	text-indent: 0.2em;
-	font-size: 1.06em;
-	font-family: JosephinSans;
+	font-size: 0.85em;
+    font-family: Gotham-Light;
+    font-weight: normal;
 }
 
 #intro .container h1 {
+    font-family: Gotham-Bold;
 	font-size: 2.6em;
 }
 
@@ -245,8 +249,12 @@ a:visited {
 	width: 150px;
 	padding-top: 45px;
 }
+#product .container .dispenserDescription{
+    font-family: Gotham-Book;
+}
 #product .container .dispenserDescription h3{
     font-family: Gotham-Black;
+    font-size: 1.2em;
 }
 #product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
 	color: #FF005C;
@@ -606,6 +614,7 @@ a:visited {
 }
 
 #creatorsStory .container .description p {
+    font-family: Gotham-Bold;
 	font-size: 1.3em;
 }
 
@@ -637,6 +646,7 @@ a:visited {
 }
 
 #creatorsStory .container .story-list p {
+    font-family: Gotham-Book;
 	margin-top: 0;
 	font-size: 0.7em;
 	padding-left: 20px;
@@ -815,6 +825,7 @@ footer .container .linksList .imageCell img {
 	
 	#intro .container h2 {
 		text-indent: 0;
+        font-size: 0.85em;
 	}
 
     #intro .container header nav ul li {
@@ -920,13 +931,13 @@ footer .container .linksList .imageCell img {
 
     #intro .container h1{
         font-size: 4.3em;
-        font-family: Gotham-Bold;
+
     }
 
     #intro .container h2{
-        font-size: 1.35em;
+        font-size: 1.45em;
         text-indent: .1em;
-        font-family: Gotham-Light;
+
     }
 
 	#intro .container header {
@@ -934,7 +945,7 @@ footer .container .linksList .imageCell img {
 	}
 
 	#intro .container header nav ul li {
-        font-family: Gotham-Bold;
+
 		font-size: 25px;
 		padding-left: 2%;
         margin-top: -15px;
@@ -974,8 +985,7 @@ footer .container .linksList .imageCell img {
 	}
 
 	#product .container .dispenserDescription h3 {
-        font-family: Gotham-Black;
-		font-size: 55px;
+        font-size: 55px;
 	}
 
     #product .container .dispenserDescription p{
@@ -1341,7 +1351,6 @@ footer .container .linksList .imageCell img {
 	}
     #creatorsStory .container .description p{
         font-size: 30px;
-        font-family: Gotham-Bold;
         line-height: 38px;
     }
 
@@ -1371,7 +1380,6 @@ footer .container .linksList .imageCell img {
 	
 	#creatorsStory .container .story-list p {
 		padding-left: 50px;
-        font-family: Gotham-Book;
 		font-size: 17px;
         line-height: 20px;
 	}
@@ -1409,17 +1417,15 @@ footer .container .linksList .imageCell img {
 
     #intro .container h1{
         font-size: 120px;
-        font-family: Gotham-Bold;
     }
 
     #intro .container h2{
-        font-family: Gotham-Light;
-        font-size: 38px;
+        font-size: 40px;
+        line-height: 75px;
         text-indent: 0.1em;
     }
 
     #intro .container header nav ul li {
-        font-family: Gotham-Bold;
         font-size: 1.15em;
         padding-left: 4%;
     }
