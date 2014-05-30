@@ -642,7 +642,8 @@ a:visited {
 }
 
 #creatorsStory .container .story-list .thumbnail img {
-	width: 120px;
+    height: 109px;
+	/*width: 120px;*/
 }
 
 #creatorsStory .container .story-list p {
@@ -858,7 +859,8 @@ footer .container .linksList .imageCell img {
    =========================== */
 
 	#creatorsStory .container .story-list .thumbnail img {
-		width: 180px;
+        height: 169px;
+		/*width: 180px;*/
 	}
 
 	#creatorsStory .container .story-list p {
@@ -1376,6 +1378,7 @@ footer .container .linksList .imageCell img {
 
 	#creatorsStory .container .story-list .thumbnail img{
 		width: auto;
+        height: 211px;
 	}
 	
 	#creatorsStory .container .story-list p {
