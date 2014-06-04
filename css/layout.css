@@ -90,7 +90,7 @@ a:visited {
 }
 
 #intro .background {
-	background-image: url(../images/bg/intro.jpg);
+	background-image: url(../images/bg/intro.png);
 	background-repeat: no-repeat;
 	background-position: 53% top;
 	background-size: auto 110%;
@@ -138,15 +138,18 @@ a:visited {
 }
 
 #intro .container h2 {
-	text-indent: 0.2em;
-	font-size: 0.85em;
+
+	font-size: 0.75em;
     font-family: Gotham-Light;
     font-weight: normal;
+    letter-spacing: -0.65px;
+
 }
 
 #intro .container h1 {
     font-family: Gotham-Bold;
-	font-size: 2.6em;
+	font-size: 2.2em;
+    letter-spacing: -0.5px;
 }
 
 #intro .container .productLogo {
@@ -168,8 +171,8 @@ a:visited {
 	border-radius: 10px 0 0 10px;
 	-moz-border-radius: 10px 0 0 10px;
 	-webkit-border-radius: 10px 0 0 10px;
-	color: #FFFFFF;
-	background-color: #FF005C;
+	color: #FF005C;
+	background-color: #ffffff;
 	font-size: 1em;
 	line-height: 1.2em;
 	padding: 0px 20px 0px 27px;
@@ -454,7 +457,7 @@ a:visited {
 
 #flavorsForEveryone .right-column{
     display: table-cell;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     vertical-align: middle;
     width: 100%;
@@ -510,7 +513,7 @@ a:visited {
 }
 
 #convenientAccess .container a {
-    text-decoration: none;
+
 }
 
 
@@ -667,9 +670,9 @@ footer .container {
 	margin: 0px 0;
 	border: 0;
 	border-top: 1px solid #ccc;
-	box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
-	-moz-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
-	-webkit-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	box-shadow: inset 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	-moz-box-shadow: inset 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	-webkit-box-shadow: inset 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
 	height: 40px;
 }
 
@@ -677,8 +680,8 @@ footer .container a {
 	color: #000;
 	text-decoration: none;
     font-family: Gotham-Bold;
-    font-size: 0.81em;
-    letter-spacing: -1px;
+    font-size: 0.9em;
+    letter-spacing: 0px;
 }
 footer .container a:hover {
     text-decoration: underline;
@@ -826,7 +829,8 @@ footer .container .linksList .imageCell img {
 	
 	#intro .container h2 {
 		text-indent: 0;
-        font-size: 0.85em;
+        font-size: 0.75em;
+        letter-spacing: -0.5px;
 	}
 
     #intro .container header nav ul li {
@@ -896,15 +900,18 @@ footer .container .linksList .imageCell img {
 
     #toTheTopArrow{
         background-image: url(../images/arrow.png);
-        width: 72px;
+        background-size: contain;
 
         z-index: 10;
         position: fixed;
-        right: 25px;
-        bottom: 80px;
+
         cursor: pointer;
         height: 0;
         opacity: 0;
+
+        width: 53px;
+        bottom: 70px;
+        right: 20px;
 
         -webkit-transition:opacity 0.5s;
         -moz-transition:opacity 0.5s;
@@ -914,7 +921,7 @@ footer .container .linksList .imageCell img {
 
     #toTheTopArrow.active{
         opacity: 1;
-        height: 71px;
+        height: 53px;
     }
 
 	/* ===========================
@@ -932,69 +939,74 @@ footer .container .linksList .imageCell img {
 	}
 
     #intro .container h1{
-        font-size: 4.3em;
-
+        font-size: 87px;
+        letter-spacing: -2px;
     }
 
     #intro .container h2{
-        font-size: 1.45em;
-        text-indent: .1em;
-
+        font-size: 28px;
+        padding-left: 0.1em;
+        letter-spacing: -0.35px;
+        line-height: 1.1em;
     }
 
-	#intro .container header {
-		margin: 35px 58px;
-	}
+    #intro .container header {
+        margin: 28px 38px;
+    }
 
 	#intro .container header nav ul li {
-
-		font-size: 25px;
+        letter-spacing: -0.3px;
+		font-size: 18px;
 		padding-left: 2%;
         margin-top: -15px;
 	}
 
+
+
 	#intro .container .productLogo {
-		line-height: 2.9em;
+		line-height: 3.9em;
 	}
 
-	#intro .container .reserve {
-		line-height: 1.7em;
-		max-width: 180px;
-		padding: 7px 35px;
-		font-size: 0.83em;
-		bottom: 30px;
-	}
+    #intro .container .reserve {
+        line-height: 21px;
+        max-width: 130px;
+        padding: 7px 57px 10px 30px;
+        font-size: 13px;
+        bottom: 30px;
+    }
+
 
 	/* ===========================
    ===== Product  ===== 
    =========================== */
    
     #product .container .newsList {
-		padding: 0px 0px 30px 0px;
+		padding: 0px 0px 25px 0px;
 	}
-	
-	#product .container .productInfo {
-		padding-top: 100px; 
-	}
-	
-	#product .container .dispenserPhoto img {
-		width: 290px;
-	}
-	
+
+    #product .container .productInfo {
+        padding-top: 70px;
+    }
+
+    #product .container .dispenserPhoto img {
+        width: 245px;
+    }
 	#product .container .dispenserDescription {
-		width: 500px;
-		padding: 95px 0px 0px 90px;
+		width: 400px;
+		padding: 90px 0px 0px 155px;
 	}
 
 	#product .container .dispenserDescription h3 {
-        font-size: 55px;
+        font-size: 40px;
+        letter-spacing: 0px;
+        line-height: 22px;
 	}
 
     #product .container .dispenserDescription p{
         font-family: Gotham-Book;
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: -2px;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.45px;
     }
 
 
@@ -1017,17 +1029,18 @@ footer .container .linksList .imageCell img {
     }
 
     #lessEnergy .container p {
-        font-size: 30px;
+        font-size: 22px;
         font-family: Gotham-Bold;
-        line-height: 38px;
-        letter-spacing: -2px;
-        margin: 0;
+        line-height: 28px;
+        letter-spacing: -1.2px;
+        width: 330px;
     }
 
     #lessEnergy .container .container-inner {
-        width: 430px;
+        width: 450px;
         padding-left: 15%;
         text-align: left;
+        padding-bottom: 30px;
     }
 
     #lessEnergy .left-column{
@@ -1040,10 +1053,11 @@ footer .container .linksList .imageCell img {
     }
 
     #lessEnergy .left-column .section-title{
-        width: 350px;
-        padding-right: 15%;
-        font-size: 45px;
-        line-height: 50px;
+        width: 320px;
+        padding-right: 23%;
+        font-size: 33px;
+        line-height: 37px;
+        padding-bottom: 25px;
     }
 
     #lessEnergy .right-column{
@@ -1056,10 +1070,11 @@ footer .container .linksList .imageCell img {
         border-radius: 0px;
     }
     #lessEnergy .right-column h2 {
-        margin-bottom: 20%;
-        font-size: 50px;
-        margin-left: 0px;
-        letter-spacing: -2px;
+        margin-bottom: 105px;
+        font-size: 40px;
+        line-height: 22px;
+        margin-left: -1px;
+        letter-spacing: -0.7px;
     }
     #lessEnergy .right-column h3 {
         display: none;
@@ -1069,11 +1084,12 @@ footer .container .linksList .imageCell img {
 
     #lessEnergy .right-column .annotation {
         font-family: Gotham-Bold;
-        font-size: 22px;
-        line-height: 30px;
-        letter-spacing: 0;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.7px;
+        width: 255px;
         margin: 0;
-        margin-top: 10%;
+        margin-top: 61px;
     }
 
 
@@ -1097,11 +1113,12 @@ footer .container .linksList .imageCell img {
     }
 
     #containersOptional .container .container-inner {
-        max-width: 500px;
+        max-width: 510px;
 
         padding: 0;
-        padding-left: 15%;
+        padding-left: 140px;
         text-align: left;
+        padding-bottom: 40px;
 
         -moz-border-radius: 0px;
         -webkit-border-radius: 0px;
@@ -1119,8 +1136,8 @@ footer .container .linksList .imageCell img {
     }
 
     #containersOptional .left-column img{
-        width: 95%;
-        margin: 0;
+        width: 110%;
+        margin-left: -35px;
     }
 
     #containersOptional .right-column{
@@ -1129,16 +1146,16 @@ footer .container .linksList .imageCell img {
     }
 
     #containersOptional .right-column h3 {
-        font-size: 45px;
-        letter-spacing: -3px;
-        line-height: 50px;
+        font-size: 33px;
+        letter-spacing: -2px;
+        line-height: 27px;
     }
 
     #containersOptional .right-column p {
-        font-size: 30px;
+        font-size: 22px;
         font-family: Gotham-Book;
-        line-height: 38px;
-        letter-spacing: -2px;
+        line-height: 28px;
+        letter-spacing: -1.25px;
         margin: auto;
     }
 
@@ -1160,10 +1177,11 @@ footer .container .linksList .imageCell img {
     }
 
     #flavorsForEveryone .container .container-inner {
-        width: 450px;
+        width: 340px;
         padding: 0;
         padding-left: 15%;
         text-align: left;
+        padding-bottom: 30px;
     }
 
     #flavorsForEveryone .left-column{
@@ -1177,12 +1195,12 @@ footer .container .linksList .imageCell img {
 
     #flavorsForEveryone .left-column .section-title{
         width: 350px;
-        padding-right: 15%;
-        font-size: 45px;
-        line-height: 50px;
         font-family: Gotham-Bold;
-        letter-spacing: -3px;
-
+        font-size: 33px;
+        line-height: 37px;
+        letter-spacing: -2.2px;
+        padding-bottom: 40px;
+        padding-right: 18%;
     }
 
     #flavorsForEveryone .right-column{
@@ -1199,10 +1217,10 @@ footer .container .linksList .imageCell img {
     }
 
     #flavorsForEveryone .right-column p {
-        font-size: 30px;
+        font-size: 22px;
         font-family: Gotham-Bold;
-        line-height: 38px;
-        letter-spacing: -2px;
+        line-height: 28px;
+        letter-spacing: -1.35px;
     }
 
 
@@ -1226,10 +1244,10 @@ footer .container .linksList .imageCell img {
     }
 
     #convenientAccess .container .container-inner {
-        max-width: 500px;
+        max-width: 390px;
 
         padding: 0;
-        padding-left: 15%;
+        padding-left: 17%;
         text-align: left;
 
         -moz-border-radius: 0px;
@@ -1254,16 +1272,17 @@ footer .container .linksList .imageCell img {
     }
 
     #convenientAccess .right-column h3 {
-        font-size: 45px;
-        letter-spacing: -3px;
-        line-height: 50px;
+        font-size: 33px;
+        letter-spacing: -1.3px;
+        line-height: 15px;
     }
 
     #convenientAccess .right-column p {
-        font-size: 30px;
+        font-size: 22px;
         font-family: Gotham-Book;
-        line-height: 38px;
-        letter-spacing: -2px;
+        line-height: 28px;
+        letter-spacing: -1.25px;
+        margin-top: 0px;
     }
 
 
@@ -1347,13 +1366,15 @@ footer .container .linksList .imageCell img {
 	}
 	
 	#creatorsStory .container h3 {
-		font-size: 55px;
+        font-size: 40px;
         font-family: Gotham-Black;
-		margin: 80px 0 100px 0;
+        margin: 32px 0 100px 0;
 	}
     #creatorsStory .container .description p{
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: -1.25px;
+        padding-bottom: 170px;
     }
 
 	#creatorsStory .container .container-inner {
@@ -1367,69 +1388,316 @@ footer .container .linksList .imageCell img {
 	}
 
 	#creatorsStory .container .description {
-		width: 380px;
+		width: 235px;
 		text-align: right;
 	}
 
 	#creatorsStory .container .story-list {
-		width: 652px;
+		width: 495px;
 		padding-left: 90px;
 	}
 
 	#creatorsStory .container .story-list .thumbnail img{
 		width: auto;
-        height: 211px;
+        height: 155px;
 	}
 	
 	#creatorsStory .container .story-list p {
-		padding-left: 50px;
-		font-size: 17px;
-        line-height: 20px;
+        padding-left: 31px;
+        font-size: 12px;
+        line-height: 14.5px;
+        letter-spacing: -0.4px;
 	}
 
+    #creatorsStory .container .story-list li{
+        padding: 4px 0;
+    }
 	/* ===========================
    ===== Footer  =====
    =========================== */
 	
 	footer .container {
-		height: 120px;
+		height: 90px;
 		padding: 0px 25px 0px 25px;
 	}
 	
 	footer .container .linksList .twitterCell {
 		text-align: left;
-		padding: 0 11% 0 3%;
+		padding: 0 15% 0 0;
 	}
 
 	footer .container .linksList .copyright {
-		font-size: 12px;
+		font-size: 9px;
 		color: #5c5c5c;
 		font-family: Gotham-Book;
+        float: right;
 	}
 
 	footer .container .linksList .imageCell {
-		width: 35px;
+		width: 25px;
 	}
 	
 	footer .container .linksList li {
 		padding: 0 3%;
 	}
+
+    footer .container a{
+        font-size: 0.7em;
+        letter-spacing: -0.7px;
+    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
+    #toTheTopArrow{
+        width: 72px;
+        right: 25px;
+        bottom: 80px;
+    }
+
+    #toTheTopArrow.active{
+        height: 71px;
+    }
 
     #intro .container h1{
         font-size: 120px;
+        letter-spacing: -0.5px;
     }
 
     #intro .container h2{
         font-size: 40px;
-        line-height: 75px;
-        text-indent: 0.1em;
+        letter-spacing: -0.75px;
+        line-height: 2.45em;
+    }
+
+    #intro .container header {
+        margin: 35px 58px;
     }
 
     #intro .container header nav ul li {
         font-size: 1.15em;
         padding-left: 4%;
     }
+
+    #intro .container .reserve {
+        line-height: 1.7em;
+        max-width: 180px;
+        padding: 7px 70px 7px 35px;
+        font-size: 0.83em;
+    }
+
+    /* ===========================
+   ===== Product  =====
+   =========================== */
+
+    #product .container .newsList {
+        padding: 0px 0px 30px 0px;
+    }
+
+
+    #product .container .productInfo {
+        padding-top: 100px;
+    }
+
+    #product .container .dispenserPhoto img {
+        width: 290px;
+    }
+
+    #product .container .dispenserDescription {
+        width: 500px;
+        padding: 95px 0px 0px 90px;
+    }
+
+    #product .container .dispenserDescription h3 {
+        font-size: 55px;
+        letter-spacing: 0.7px;
+    }
+
+    #product .container .dispenserDescription p{
+        font-family: Gotham-Book;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -0.4px;
+    }
+
+
+    /* ===========================
+  ===== lessEnergy  =====
+  =========================== */
+
+    #lessEnergy .left-column .section-title{
+        width: 350px;
+        padding-right: 15%;
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    #lessEnergy .right-column h2 {
+        margin-bottom: 20%;
+        font-size: 50px;
+        margin-left: 0px;
+        letter-spacing: -1px;
+    }
+
+    #lessEnergy .container .container-inner {
+    }
+
+    #lessEnergy .container p {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1.5px;
+        margin: 0;
+        width: 450px;
+    }
+
+    #lessEnergy .right-column .annotation {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -1.27px;
+        width: 340px;
+        margin-top: 10%;
+    }
+
+    /* ===========================
+  ===== containersOptional  =====
+  =========================== */
+
+    #containersOptional .container .container-inner {
+        max-width: 650px;
+
+        padding: 0;
+        padding-left: 15%;
+        text-align: left;
+
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        background: transparent;
+    }
+
+    #containersOptional .left-column img{
+        width: 95%;
+        margin: 0;
+    }
+
+
+    #containersOptional .right-column h3 {
+        font-size: 45px;
+        letter-spacing: -2.5px;
+        line-height: 50px;
+    }
+
+    #containersOptional .right-column p {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1.5px;
+    }
+
+    /* ===========================
+  ===== flavorsForEveryone  =====
+  =========================== */
+    #flavorsForEveryone .container .container-inner {
+        width: 500px;
+
+    }
+
+    #flavorsForEveryone .left-column .section-title{
+        font-size: 45px;
+        line-height: 50px;
+        letter-spacing: -3px;
+        padding-bottom: 0px;
+    }
+
+    #flavorsForEveryone .right-column p {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1.75px;
+    }
+
+    /* ===========================
+  ===== convenientAccess  =====
+  =========================== */
+
+    #convenientAccess .container .container-inner {
+        max-width: 500px;
+        padding-left: 15%;
+    }
+
+    #convenientAccess .right-column h3 {
+        font-size: 45px;
+        letter-spacing: -1.3px;
+        line-height: 45px;
+    }
+
+    #convenientAccess .right-column p {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -2px;
+        margin-top: 10px;
+    }
+
+    /* ===========================
+   ===== creatorsStory  =====
+   =========================== */
+
+
+    #creatorsStory .container h3 {
+        font-size: 55px;
+        margin: 20px 0 100px 0;
+    }
+    #creatorsStory .container .description p{
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1.5px;
+        padding-bottom: 0;
+    }
+
+    #creatorsStory .container .description {
+        width: 320px;
+    }
+
+    #creatorsStory .container .story-list {
+        width: 652px;
+    }
+
+    #creatorsStory .container .story-list .thumbnail img{
+        height: 211px;
+    }
+
+    #creatorsStory .container .story-list p {
+        padding-left: 50px;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: -1px;
+    }
+
+    #creatorsStory .container .story-list li{
+        padding: 10px 0;
+    }
+
+    /* ===========================
+===== Footer  =====
+=========================== */
+
+    footer .container .linksList .twitterCell {
+        text-align: left;
+        padding: 0 11% 0 3%;
+    }
+
+    footer .container .linksList .copyright {
+        font-size: 12px;
+        color: #5c5c5c;
+        font-family: Gotham-Book;
+    }
+
+    footer .container a{
+        font-size: 0.9em;
+    }
+    footer .container .linksList .imageCell {
+        width: 35px;
+    }
+
+    footer .container {
+        height: 120px;
+    }
+
 }

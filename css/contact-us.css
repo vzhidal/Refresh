@@ -35,6 +35,12 @@
 	text-align: center;
 }
 
+.reserve-form h4 {
+    font-size: 0.5em;
+    color: #ff005c;
+    text-align: center;
+}
+
 .reserve-form select {
 	font-family: Gotham;
 	height: 47px !important;
@@ -144,8 +150,11 @@
 }
 
 .title-wrapper{
-    height: 60px;
+    height: 140px;
+    text-align: center;
+    margin-top: 100px;
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -173,14 +182,27 @@
 		margin: 0 auto;
 	}
 
+    .title-wrapper{
+        width: 600px;    margin-left: -10%;
 
+
+    }
 	.reserve-form h3 {
-		font-size: 1.15em;
-		margin: 100px 0;
+        font-size: 38px;
+        line-height: 40px;
+        letter-spacing: -1.5px;
+        margin: 18px;
 	}
+    .reserve-form h4 {
+        font-size: 25px;
+        line-height: 18px;
+        letter-spacing: -0.7px;
+        margin: 0;
+    }
 
 	.reserve-form-info {
-		font-size: 1em;
+        font-size: 12px;
+        line-height: 34px;
 	}
 
 	.content {
