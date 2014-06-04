@@ -120,6 +120,9 @@ footer .container .linksList .imageCell img {
         height: 120px;
         padding: 0px 25px 0px 25px;
     }
+    footer .container a{
+        font-size: 20px;
+    }
 
     footer .container .linksList .twitterCell {
         text-align: left;
