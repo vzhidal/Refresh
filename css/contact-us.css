@@ -2,7 +2,7 @@
    ======= form ======
    =========================== */
 .content {
-	height: 1400px;
+	height: 1200px;
 	position: relative;
 	overflow: hidden;
 }
@@ -16,7 +16,7 @@
 }
 
 .reserve-form-info {
-	font-size: 0.8em;
+	font-size: 0.5em;
 }
 
 .reserve-form ul {
@@ -31,13 +31,15 @@
 .reserve-form h3 {
 	font-size: 1em;
 	color: #ff005c;
-	margin: 20px 0;
+	margin: 5px;
+    letter-spacing: -1.2px;
 	text-align: center;
 }
 
 .reserve-form h4 {
     font-size: 0.5em;
     color: #ff005c;
+    letter-spacing: -0.5px;
     text-align: center;
 }
 
@@ -150,14 +152,36 @@
 }
 
 .title-wrapper{
-    height: 140px;
+    height: 110px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
+@media screen and (min-width: 450px) {
+    .title-wrapper {
+        height: 116px;
+        margin-top: 46px;
+    }
 
+    .reserve-form h3 {
+        font-size: 1.2em;
+        margin: 0;
+        letter-spacing: -1.2px;
+        text-align: center;
+        width: 105%;
+    }
+
+    .reserve-form h4 {
+        font-size: 0.8em;
+        letter-spacing: -0.7px;
+        margin: 2px;
+    }
+
+    .reserve-form-info {
+        font-size: 0.5em;
+    }
+}
 @media screen and (min-width: 768px) {
-
     .bg-fruits {
         position: absolute;
         z-index: -1;
@@ -171,41 +195,82 @@
         width: 100%;
         height: 100%;
         background-position: center center;
-        background-size: 1830px;
+        background-size: 1430px;
     }
+
+ .content{
+     height: 1330px;
+ }
+
 
     .reserve-form, nav ul {
-		max-width: 455px;
-	}
-
-	.reserve-form {
-		margin: 0 auto;
-	}
-
-    .title-wrapper{
-        width: 600px;    margin-left: -10%;
-
-
+        max-width: 337px;
     }
-	.reserve-form h3 {
+
+    .reserve-form {
+        margin: 0 auto;
+    }
+
+    .title-wrapper {
+        height: 110px;
+        width: 410px;
+        margin-top: 52px;
+        margin-left: -10%;
+    }
+
+    .reserve-form h3 {
+        ont-size: 28px;
+        line-height: 30px;
+        letter-spacing: -0.5px;
+    }
+
+    .reserve-form h4 {
+        font-size: 18px;
+        line-height: 13px;
+        margin: 8px;
+        letter-spacing: -1.2px;
+    }
+
+    .reserve-form-info {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+   content{
+       height: 1600px;
+   }
+
+
+    .reserve-form, nav ul {
+        max-width: 455px;
+    }
+
+    .title-wrapper {
+        height: 140px;
+        width: 540px;
+        margin-top: 100px;
+        margin-left: -12%;
+    }
+
+
+    .reserve-form h3 {
         font-size: 38px;
         line-height: 40px;
-        letter-spacing: -1.5px;
+        letter-spacing: -0.2px;
         margin: 18px;
-	}
+    }
     .reserve-form h4 {
         font-size: 25px;
         line-height: 18px;
-        letter-spacing: -0.7px;
         margin: 0;
     }
 
-	.reserve-form-info {
+    .reserve-form-info {
         font-size: 12px;
         line-height: 34px;
-	}
-
-	.content {
-		height: 1830px;
-	}
+    }
 }

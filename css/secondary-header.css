@@ -31,27 +31,49 @@ nav ul li a {
 	color: black;
 }
 
+@media screen and (min-width: 500px) {
+    nav ul{
+        height: 90px;
+    }
+}
 @media screen and (min-width: 768px) {
+    .logo {
+        color: #bfc0c1;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-	.logo {
-		color: #bfc0c1;
-		font-weight: bold;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.logo h1 {
+    .logo h1 {
         font-family: Gotham-Bold;
         margin: 0;
-		font-size: 74px;
-		line-height: 136px;
-	}
+        font-size: 54px;
+        line-height: 94px;
+        letter-spacing: -1.7px;
+       margin-left: 30px;
+    }
 
-	nav ul {
+    nav ul {
         font-family: Gotham-Bold;
-		width: 530px;
-		height: 136px;
-		font-size: 25px;
-	}
+        width: 600px;
+        height: 105px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .logo h1 {
+        font-size: 74px;
+        line-height: 136px;
+      }
+
+    nav ul {
+        height: 136px;
+        width: 600px;
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
