@@ -65,16 +65,16 @@ body {
 }
 
 ::-webkit-input-placeholder {
-	color: rgb(128, 128, 128);
+	color: rgba(128, 128, 128, 0.8);
 }
 
 ::-moz-placeholder {
-	color: rgb(128, 128, 128);
+	color: rgba(128, 128, 128, 0.8);
 }
 
 /* firefox 19+ */
 :-ms-input-placeholder {
-	color: rgb(128, 128, 128);
+	color: rgba(128, 128, 128, 0.8);
 }
 
 h2{
@@ -83,7 +83,7 @@ h2{
 
 /* ie */
 input:-moz-placeholder {
-	color: rgb(128, 128, 128);
+	color: rgba(128, 128, 128, 0.8);
 }
 
 input[type="text"], textarea, select {
@@ -95,11 +95,11 @@ select option {
 }
 
 select option:first-child {
-	color: rgb(128, 128, 128);
+	color: rgba(128, 128, 128, 08);
 }
 
 select.empty {
-	color: grey;
+	color: rgba(128, 128, 128, 08);
 }
 
 /* Hidden placeholder */
