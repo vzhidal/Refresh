@@ -87,7 +87,7 @@ input:-moz-placeholder {
 }
 
 input[type="text"], textarea, select {
-	font-family: Gotham;
+	font-family: Gotham-Bold;
 }
 
 select option {
