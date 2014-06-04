@@ -45,6 +45,7 @@
 
 .reserve-form select {
 	font-family: Gotham;
+    background: #ffffff;
 	height: 47px !important;
 }
 
@@ -63,7 +64,7 @@
 	border-color: #ff005c;
 	height: 45px;
 	width: 100%;
-	font-family: Gotham;
+	font-family: Gotham-Bold;
 	border: none;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -240,10 +241,13 @@
 
 @media screen and (min-width: 1400px) {
 
-   content{
-       height: 1600px;
-   }
+    .content{
+        height: 1630px;
+    }
 
+    .bg-contact-us {
+        background-size: 1630px;
+    }
 
     .reserve-form, nav ul {
         max-width: 455px;

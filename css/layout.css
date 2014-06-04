@@ -93,7 +93,7 @@ a:visited {
 	background-image: url(../images/bg/intro.png);
 	background-repeat: no-repeat;
 	background-position: 53% top;
-	background-size: auto 110%;
+	background-size: auto 100%;
 	overflow: hidden;
 	height: 100%;
 }
