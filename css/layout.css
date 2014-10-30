@@ -4,18 +4,17 @@
 
 body {
 	font-size: 11.6pt;
-	font-family: Gotham-Bold;
+	font-family: Gotham;
 	margin: 0;
 	padding: 0;
 
 	/* smooth font */
 	-webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: none;
 	/* end smooth font */
 }
 
 .slide {
-		height: 100%;
+	height: 100%;
 }
 
 .slide.mobile {
@@ -79,7 +78,6 @@ a:visited {
 	z-index: 1;
 }
 
-
 /* ===========================
    ===== Intro  ===== 
    =========================== */
@@ -90,10 +88,10 @@ a:visited {
 }
 
 #intro .background {
-	background-image: url(../images/bg/intro.png);
+	background-image: url(../images/bg/intro.jpg);
 	background-repeat: no-repeat;
 	background-position: 53% top;
-	background-size: auto 100%;
+	background-size: auto 110%;
 	overflow: hidden;
 	height: 100%;
 }
@@ -128,28 +126,22 @@ a:visited {
 	padding: 0;
 }
 
-#intro .container header  nav ul li {
-    font-family: Gotham-Bold;
+#intro .container header nav ul li {
 	display: block;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	white-space: nowrap;
 	padding-left: 2%;
-    padding-top: 5px;
+	padding-top: 4px;
 }
 
 #intro .container h2 {
-
-	font-size: 0.75em;
-    font-family: Gotham-Light;
-    font-weight: normal;
-    letter-spacing: -0.65px;
-
+	text-indent: 0.2em;
+	font-size: 1.06em;
+	font-family: JosephinSans;
 }
 
 #intro .container h1 {
-    font-family: Gotham-Bold;
-	font-size: 2.2em;
-    letter-spacing: -0.5px;
+	font-size: 2.6em;
 }
 
 #intro .container .productLogo {
@@ -171,8 +163,8 @@ a:visited {
 	border-radius: 10px 0 0 10px;
 	-moz-border-radius: 10px 0 0 10px;
 	-webkit-border-radius: 10px 0 0 10px;
-	color: #FF005C;
-	background-color: #ffffff;
+	color: #FFFFFF;
+	background-color: #FF005C;
 	font-size: 1em;
 	line-height: 1.2em;
 	padding: 0px 20px 0px 27px;
@@ -198,7 +190,7 @@ a:visited {
 #product .container .productInfo {
 	display: table;
 	margin: 0 auto;
-	padding-top: 70px; 
+	padding-top: 70px;
 }
 
 #product .container .newsList {
@@ -252,13 +244,11 @@ a:visited {
 	width: 150px;
 	padding-top: 45px;
 }
-#product .container .dispenserDescription{
-    font-family: Gotham-Book;
+
+#product .container .dispenserDescription h3 {
+	font-family: Gotham-Black;
 }
-#product .container .dispenserDescription h3{
-    font-family: Gotham-Black;
-    font-size: 1.2em;
-}
+
 #product .container .dispenserDescription p, #product .container .dispenserDescription h3 {
 	color: #FF005C;
 	text-align: left;
@@ -268,293 +258,278 @@ a:visited {
    ===== lessEnergy  =====
    =========================== */
 
-
 #lessEnergy .background {
-    background: url("../images/bg/sky.jpg") no-repeat center, center;
-    background-size: cover;
-    height: 100%;
+	background: url("../images/bg/sky.jpg") no-repeat center, center;
+	background-size: cover;
+	height: 100%;
 }
 
 #lessEnergy .container {
-    display: table;
-    padding: 22px 16px;
-    text-align: center;
-    height: 100%;
-    min-height: 540px;
+	display: table;
+	padding: 22px 16px;
+	text-align: center;
+	height: 100%;
+	min-height: 540px;
 }
 
 #lessEnergy .container, #lessEnergy .container a {
-    color: #274fa6;
+	color: #274fa6;
 }
 
 #lessEnergy .container a {
-    text-decoration: underline;
+	text-decoration: underline;
 }
-
 
 #lessEnergy .container .container-inner {
-    padding: 15px 45px;
+	padding: 15px 45px;
 }
 
-#lessEnergy .right-column{
-    display: table-cell;
-    background: rgb(255, 255, 255);
-    text-align: center;
-    vertical-align: top;
-    width: 100%;
-    height: 100%;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
+#lessEnergy .right-column {
+	display: table-cell;
+	background: rgb(255, 255, 255);
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
 }
 
 #lessEnergy .right-column p {
-    font-size: 14px;
-    font-family: Gotham-Bold;
-    line-height: 22px;
-    letter-spacing: 0px;
-    margin-top: 5px;
+	font-size: 14px;
+	font-family: Gotham-Bold;
+	line-height: 22px;
+	letter-spacing: 0px;
+	margin-top: 5px;
 }
 
 #lessEnergy .right-column h2 {
-    margin: 0;
-    font-size: 20px;
-    letter-spacing: -1px;
-    font-family: Gotham-Black;
-    margin-bottom: 10px;
-    margin-top: 10px;
+	margin: 0;
+	font-size: 20px;
+	letter-spacing: -1px;
+	font-family: Gotham-Black;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 #lessEnergy .right-column h3, #lessEnergy .left-column .section-title {
-    font-size: 17px;
-    font-family: Gotham-Bold;
-    letter-spacing: -1px;
-    display: inline-block;
-    text-transform: uppercase;
-    line-height: 30px;
+	font-size: 17px;
+	font-family: Gotham-Bold;
+	letter-spacing: -1px;
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 30px;
 }
 
-#lessEnergy .right-column h3{
-    margin-bottom: 3%;
+#lessEnergy .right-column h3 {
+	margin-bottom: 3%;
 }
 
-#lessEnergy .right-column .annotation{
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: -1px;
-    margin-top: 37px;
+#lessEnergy .right-column .annotation {
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: -1px;
+	margin-top: 37px;
 }
 
-#lessEnergy .left-column{
-    display: none;
+#lessEnergy .left-column {
+	display: none;
 }
-
 
 /* ===========================
    ===== containersOptional  =====
    =========================== */
 
-
 #containersOptional .background {
 
-    height: 100%;
+	height: 100%;
 }
 
 #containersOptional .container {
-    display: table;
-    text-align: center;
-    height: 100%;
-    min-height: 730px;
+	display: table;
+	text-align: center;
+	height: 100%;
+	min-height: 730px;
 }
 
 #containersOptional .container, #containersOptional .container a {
-    color: #ff005c;
+	color: #ff005c;
 }
 
 #containersOptional .container a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #containersOptional .container .container-inner {
-    padding-left: 10px;
-    padding-top: 30px;
-    padding-right: 30px;
-    min-width: 130px;
+	padding-left: 10px;
+	padding-top: 30px;
+	padding-right: 30px;
+	min-width: 130px;
 }
 
-
-#containersOptional .right-column{
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
-    width: 60%;
-    height: 100%;
+#containersOptional .right-column {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	width: 60%;
+	height: 100%;
 }
 
 #containersOptional .right-column p {
-    font-size: 18px;
-    font-family: Gotham-Book;
-    line-height: 23px;
-    letter-spacing: -1px;
-    margin: 0;
+	font-size: 18px;
+	font-family: Gotham-Book;
+	line-height: 23px;
+	letter-spacing: -1px;
+	margin: 0;
 }
 
 #containersOptional .left-column .section-title, #containersOptional .right-column h3 {
-    font-size: 20px;
-    font-family: Gotham-Bold;
-    letter-spacing: -1px;
-    display: inline-block;
-    text-transform: uppercase;
-    line-height: 24px;
+	font-size: 20px;
+	font-family: Gotham-Bold;
+	letter-spacing: -1px;
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 24px;
 }
 
-
-
-#containersOptional .left-column{
-    display: table-cell;
-    vertical-align: bottom;
+#containersOptional .left-column {
+	display: table-cell;
+	vertical-align: bottom;
 }
 
-#containersOptional .left-column img{
-    margin-left: -260px;
-    margin-bottom: -15px;
-    width: 420px;
+#containersOptional .left-column img {
+	margin-left: -260px;
+	margin-bottom: -15px;
+	width: 420px;
 }
-
 
 /* ===========================
    ===== flavorsForEveryone  =====
    =========================== */
 
-
 #flavorsForEveryone .background {
-    background: url("../images/bg/fruits.jpg") no-repeat center, center;
-    background-size: cover;
-    height: 100%;
+	background: url("../images/bg/fruits.jpg") no-repeat center, center;
+	background-size: cover;
+	height: 100%;
 }
 
 #flavorsForEveryone .container {
-    padding: 22px 16px;
-    text-align: center;
-    height: 100%;
-    display: table;
-    min-height: 540px;
+	padding: 22px 16px;
+	text-align: center;
+	height: 100%;
+	display: table;
+	min-height: 540px;
 }
 
 #flavorsForEveryone .container, #flavorsForEveryone .container a {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 #flavorsForEveryone .container a {
-    text-decoration: underline;
+	text-decoration: underline;
 
 }
-
 
 #flavorsForEveryone .container .container-inner {
-    padding: 15px 25px;
+	padding: 15px 25px;
 }
 
-#flavorsForEveryone .right-column{
-    display: table-cell;
-    background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
+#flavorsForEveryone .right-column {
+	display: table-cell;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
 }
 
 #flavorsForEveryone .right-column p {
-    font-size: 18px;
-    font-family: Gotham-Book;
-    line-height: 23px;
-    letter-spacing: 0px;
-    margin: 0;
+	font-size: 18px;
+	font-family: Gotham-Book;
+	line-height: 23px;
+	letter-spacing: 0px;
+	margin: 0;
 }
 
 #flavorsForEveryone .left-column .section-title, #flavorsForEveryone .right-column h3 {
-    font-size: 17px;
-    font-family: Gotham-Bold;
-    letter-spacing: -1px;
-    display: inline-block;
-    text-transform: uppercase;
-    line-height: 30px;
+	font-size: 17px;
+	font-family: Gotham-Bold;
+	letter-spacing: -1px;
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 30px;
 }
 
-#flavorsForEveryone .left-column{
-    display: none;
+#flavorsForEveryone .left-column {
+	display: none;
 }
-
 
 /* ===========================
    ===== convenientAccess  =====
    =========================== */
 
-
 #convenientAccess .background {
-    background: url("../images/bg/intro2.png") no-repeat center, center;
-    background-size: 1500px;
-    background-position: -320px -80px;
-    height: 100%;
+	background: url("../images/bg/intro2.png") no-repeat center, center;
+	background-size: 1500px;
+	background-position: -320px -80px;
+	height: 100%;
 }
 
 #convenientAccess .container {
-    display: table;
-    text-align: center;
-    height: 100%;
-    min-height: 730px;
+	display: table;
+	text-align: center;
+	height: 100%;
+	min-height: 730px;
 }
 
 #convenientAccess .container, #convenientAccess .container a {
-    color: #ff005c;
+	color: #ff005c;
 }
 
 #convenientAccess .container a {
-
+	text-decoration: none;
 }
-
 
 #convenientAccess .container .container-inner {
-    background: #fff;
-    border-radius: 15px 0px 0px 15px;
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
+	background: #fff;
+	border-radius: 15px 0px 0px 15px;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
 }
 
-#convenientAccess .right-column{
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
-    width: 50%;
-    height: 100%;
+#convenientAccess .right-column {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	width: 50%;
+	height: 100%;
 }
 
 #convenientAccess .right-column p {
-    font-size: 18px;
-    font-family: Gotham-Book;
-    line-height: 23px;
-    letter-spacing: 0px;
+	font-size: 18px;
+	font-family: Gotham-Book;
+	line-height: 23px;
+	letter-spacing: 0px;
 }
 
 #convenientAccess .left-column .section-title, #convenientAccess .right-column h3 {
-    font-size: 17px;
-    font-family: Gotham-Bold;
-    letter-spacing: -1px;
-    display: inline-block;
-    text-transform: uppercase;
-    line-height: 30px;
+	font-size: 17px;
+	font-family: Gotham-Bold;
+	letter-spacing: -1px;
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 30px;
 }
 
-
-#convenientAccess .left-column{
-   display: table-cell;
+#convenientAccess .left-column {
+	display: table-cell;
 }
-
 
 /* ===========================
    ===== workDescription  =====
@@ -617,14 +592,13 @@ a:visited {
 }
 
 #creatorsStory .container .description p {
-    font-family: Gotham-Bold;
 	font-size: 1.3em;
 }
 
 #creatorsStory .container .story-list {
 	margin: 0;
 	padding: 0;
-	
+
 }
 
 #creatorsStory .container .story-list li {
@@ -641,16 +615,15 @@ a:visited {
 }
 
 #creatorsStory .container .story-list .thumbnail {
-	
+
 }
 
 #creatorsStory .container .story-list .thumbnail img {
-    height: 109px;
-	/*width: 120px;*/
+	width: 120px;
+	height: 109px;
 }
 
 #creatorsStory .container .story-list p {
-    font-family: Gotham-Book;
 	margin-top: 0;
 	font-size: 0.7em;
 	padding-left: 20px;
@@ -670,25 +643,24 @@ footer .container {
 	margin: 0px 0;
 	border: 0;
 	border-top: 1px solid #ccc;
-	box-shadow: 0px -1px 7px rgba(0,0,0,0.4);
-	-moz-box-shadow: 0px -1px 7px rgba(0,0,0,0.4);
-	-webkit-box-shadow: 0px -1px 7px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	-moz-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
+	-webkit-box-shadow: 0px 0px 3px #000, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff;
 	height: 40px;
-    background: #ffffff;
-    z-index: 6;
-    position: relative;
 }
 
 footer .container a {
 	color: #000;
 	text-decoration: none;
-    font-family: Gotham-Bold;
-    font-size: 0.9em;
-    letter-spacing: 0px;
+	font-family: Gotham-Bold;
+	font-size: 0.81em;
+	letter-spacing: -1px;
 }
+
 footer .container a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
+
 footer .container .linksList {
 	display: table;
 	padding: 0;
@@ -705,7 +677,7 @@ footer .container .linksList li {
 	vertical-align: middle;
 }
 
-footer .container .linksList .imageCell{
+footer .container .linksList .imageCell {
 	width: 35px;
 	display: inline-block;
 }
@@ -721,109 +693,105 @@ footer .container .linksList .imageCell img {
 
 @media screen and (min-width: 470px) {
 
-    #intro .container header nav ul li {
-        display: inline-block;
-    }
+	#intro .container header nav ul li {
+		display: inline-block;
+	}
 
-    #lessEnergy .container {
-        min-height: 730px;
-    }
+	#lessEnergy .container {
+		min-height: 730px;
+	}
 
-    #lessEnergy .right-column p {
-        font-size: 24px;
-        line-height: 34px;
-        margin-top: 25px;
-    }
+	#lessEnergy .right-column p {
+		font-size: 24px;
+		line-height: 34px;
+		margin-top: 25px;
+	}
 
-    #lessEnergy .right-column h2 {
-        font-size: 30px;
-        line-height: 30px;
-        letter-spacing: -1px;
-        margin-bottom: 36px;
-        margin-top: 15px;
-    }
+	#lessEnergy .right-column h2 {
+		font-size: 30px;
+		letter-spacing: -1px;
+		margin-bottom: 36px;
+		margin-top: 15px;
+	}
 
-    #lessEnergy .right-column h3, #lessEnergy .left-column .section-title {
-        font-size: 26px;
-        line-height: 26px;
-        letter-spacing: -2px;
-    }
+	#lessEnergy .right-column h3, #lessEnergy .left-column .section-title {
+		font-size: 26px;
+		letter-spacing: -2px;
+	}
 
-    #lessEnergy .right-column .annotation{
-        font-size: 17px;
-        line-height: 22px;
-        margin-top: 60px;
-    }
+	#lessEnergy .right-column .annotation {
+		font-size: 17px;
+		line-height: 22px;
+		margin-top: 60px;
+	}
 
-    #containersOptional .container .container-inner {
-        padding-left: 20px;
-        padding-top: 60px;
-        padding-right: 45px;
-    }
+	#containersOptional .container .container-inner {
+		padding-left: 20px;
+		padding-top: 60px;
+		padding-right: 45px;
+	}
 
-    #containersOptional .left-column .section-title, #containersOptional .right-column h3 {
-        font-size: 26px;
-        line-height: 35px;
-    }
+	#containersOptional .left-column .section-title, #containersOptional .right-column h3 {
+		font-size: 26px;
+		line-height: 35px;
+	}
 
-    #containersOptional .right-column p {
-        font-size: 24px;
-        line-height: 30px;
-        letter-spacing: -1px;
-    }
+	#containersOptional .right-column p {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: -1px;
+	}
 
-    #containersOptional .left-column .section-title, #containersOptional .right-column h3 {
-        font-size: 26px;
-        letter-spacing: -1px;
-        line-height: 35px;
-    }
+	#containersOptional .left-column .section-title, #containersOptional .right-column h3 {
+		font-size: 26px;
+		letter-spacing: -1px;
+		line-height: 35px;
+	}
 
-    #containersOptional .left-column img{
-        margin-left: -225px;
-    }
+	#containersOptional .left-column img {
+		margin-left: -225px;
+	}
 
-    #flavorsForEveryone .container {
-        min-height: 730px;
-    }
+	#flavorsForEveryone .container {
+		min-height: 730px;
+	}
 
-    #flavorsForEveryone .right-column p {
-        font-size: 24px;
-        line-height: 34px;
-    }
+	#flavorsForEveryone .right-column p {
+		font-size: 24px;
+		line-height: 34px;
+	}
 
-    #flavorsForEveryone .left-column .section-title, #flavorsForEveryone .right-column h3 {
-        font-size: 26px;
-        letter-spacing: 0px;
-        line-height: 30px;
-    }
+	#flavorsForEveryone .left-column .section-title, #flavorsForEveryone .right-column h3 {
+		font-size: 26px;
+		letter-spacing: 0px;
+		line-height: 30px;
+	}
 
+	#convenientAccess .right-column p {
+		font-size: 24px;
+		line-height: 34px;
+		letter-spacing: -2px;
+	}
 
-    #convenientAccess .right-column p {
-        font-size: 24px;
-        line-height: 34px;
-        letter-spacing: -2px;
-    }
-
-    #convenientAccess .left-column .section-title, #convenientAccess .right-column h3 {
-        font-size: 26px;
-        letter-spacing: -2px;
-    }
-
+	#convenientAccess .left-column .section-title, #convenientAccess .right-column h3 {
+		font-size: 26px;
+		letter-spacing: -2px;
+	}
 
 }
+
 @media screen and (min-width: 540px) {
 	body {
 		font-size: 16pt;
 	}
-	
+
 	.slide.mobile {
 		height: 868px;
 	}
-	
+
 	/* ===========================
    ===== Intro  ===== 
    =========================== */
-
 	#intro .container .reserve {
 		max-width: 174px;
 		border-radius: 20px 0 0 20px;
@@ -831,61 +799,56 @@ footer .container .linksList .imageCell img {
 		-webkit-border-radius: 20px 0 0 20px;
 		font-size: 0.8em;
 	}
-	
+
 	#intro .container h2 {
 		text-indent: 0;
-        font-size: 0.75em;
-        letter-spacing: -0.5px;
 	}
 
-    #intro .container header nav ul li {
-        display: block;
-    }
-	
+	#intro .container header nav ul li {
+		display: block;
+	}
+
 	/* ===========================
    ===== Product  ===== 
    =========================== */
-   
-    #product .container .productInfo {
-		padding-top: 120px; 
+	#product .container .productInfo {
+		padding-top: 120px;
 	}
-	
+
 	#product .container .newsList {
 		padding: 0px 0px 20px 0px;
 	}
-	
+
 	#product .container .dispenserPhoto img {
 		width: 250px;
 	}
-	
+
 	#product .container .dispenserDescription {
 		width: 210px;
 		padding: 110px 0px 0px 25px;
 	}
-	
+
 	/* ===========================
    ===== Creators story  ===== 
    =========================== */
-
 	#creatorsStory .container .story-list .thumbnail img {
-        height: 169px;
-		/*width: 180px;*/
+		width: 180px;
+		height: 163px;
 	}
 
 	#creatorsStory .container .story-list p {
 		padding-left: 40px;
 		font-size: 0.6em;
 	}
-	
+
 	/* ===========================
    ===== Footer  ===== 
    =========================== */
-	
 	footer .container {
 		height: 55px;
 		padding: 20px 20px 5px 20px;
 	}
-	
+
 	footer .container .linksList .imageCell {
 		width: 50px;
 	}
@@ -893,9 +856,9 @@ footer .container .linksList .imageCell img {
 
 @media screen and (min-width: 650px) {
 
-    #intro .container header nav ul li {
-        display: inline-block;
-    }
+	#intro .container header nav ul li {
+		display: inline-block;
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -903,37 +866,33 @@ footer .container .linksList .imageCell img {
 		height: 100%;
 	}
 
-    #toTheTopArrow{
-        background-image: url(../images/arrow.png);
-        background-size: contain;
+	#toTheTopArrow {
+		background-image: url(../images/arrow.png);
+		width: 72px;
 
-        z-index: 10;
-        position: fixed;
+		z-index: 10;
+		position: fixed;
+		right: 25px;
+		bottom: 80px;
+		cursor: pointer;
+		height: 0;
+		opacity: 0;
 
-        cursor: pointer;
-        height: 0;
-        opacity: 0;
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+	}
 
-        width: 53px;
-        bottom: 70px;
-        right: 20px;
-
-        -webkit-transition:opacity 0.5s;
-        -moz-transition:opacity 0.5s;
-        -o-transition:opacity 0.5s;
-        transition:opacity 0.5s;
-    }
-
-    #toTheTopArrow.active{
-        opacity: 1;
-        height: 53px;
-    }
+	#toTheTopArrow.active {
+		opacity: 1;
+		height: 71px;
+	}
 
 	/* ===========================
    ===== intro  =====
    =========================== */
-   
-   #intro .background {
+	#intro .background {
 		background-position: top;
 		background-size: cover;
 		height: 100%;
@@ -943,355 +902,336 @@ footer .container .linksList .imageCell img {
 		color: #ffffff;
 	}
 
-    #intro .container h1{
-        font-size: 87px;
-        letter-spacing: -2px;
-    }
+	#intro .container h1 {
+		font-size: 4.3em;
+		font-family: Gotham-Bold;
+	}
 
-    #intro .container h2{
-        font-size: 28px;
-        padding-left: 0.1em;
-        letter-spacing: -0.35px;
-        line-height: 1.1em;
-    }
+	#intro .container h2 {
+		font-size: 1.35em;
+		text-indent: .1em;
+		font-family: Gotham-Light;
+	}
 
-    #intro .container header {
-        margin: 28px 38px;
-    }
+	#intro .container header {
+		margin: 35px 58px;
+	}
 
 	#intro .container header nav ul li {
-        letter-spacing: -0.3px;
-		font-size: 18px;
+		font-family: Gotham-Bold;
+		font-size: 25px;
 		padding-left: 2%;
-        margin-top: -15px;
+		margin-top: -15px;
 	}
-
-
 
 	#intro .container .productLogo {
-		line-height: 3.9em;
+		line-height: 2.9em;
 	}
 
-    #intro .container .reserve {
-        line-height: 21px;
-        max-width: 130px;
-        padding: 7px 57px 10px 30px;
-        font-size: 13px;
-        bottom: 30px;
-    }
-
+	#intro .container .reserve {
+		line-height: 1.7em;
+		max-width: 180px;
+		padding: 7px 35px;
+		font-size: 0.83em;
+		bottom: 30px;
+	}
 
 	/* ===========================
    ===== Product  ===== 
    =========================== */
-   
-    #product .container .newsList {
-		padding: 0px 0px 25px 0px;
+	#product .container .newsList {
+		padding: 0px 0px 30px 0px;
 	}
 
-    #product .container .productInfo {
-        padding-top: 70px;
-    }
+	#product .container .productInfo {
+		padding-top: 100px;
+	}
 
-    #product .container .dispenserPhoto img {
-        width: 245px;
-    }
+	#product .container .dispenserPhoto img {
+		width: 290px;
+	}
+
 	#product .container .dispenserDescription {
-		width: 400px;
-		padding: 90px 0px 0px 155px;
+		width: 500px;
+		padding: 95px 0px 0px 90px;
 	}
 
 	#product .container .dispenserDescription h3 {
-        font-size: 40px;
-        letter-spacing: 0px;
-        line-height: 40px;
+		font-family: Gotham-Black;
+		font-size: 55px;
 	}
 
-    #product .container .dispenserDescription p{
-        font-family: Gotham-Book;
-        font-size: 22px;
-        line-height: 30px;
-        letter-spacing: -0.45px;
-    }
+	#product .container .dispenserDescription p {
+		font-family: Gotham-Book;
+		font-size: 30px;
+		line-height: 38px;
+		letter-spacing: -2px;
+	}
 
-
-
-    /* ===========================
+	/* ===========================
    ===== lessEnergy  =====
    =========================== */
-    #lessEnergy .background {
-        height: 100%;
-        overflow: hidden;
-    }
+	#lessEnergy .background {
+		height: 100%;
+		overflow: hidden;
+	}
 
-    #lessEnergy .container {
-        display: table;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        opacity: .85;
-        text-align: left;
-    }
+	#lessEnergy .container {
+		display: table;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		opacity: .85;
+		text-align: left;
+	}
 
-    #lessEnergy .container p {
-        font-size: 22px;
-        font-family: Gotham-Bold;
-        line-height: 28px;
-        letter-spacing: -1.2px;
-        width: 330px;
-    }
+	#lessEnergy .container p {
+		font-size: 30px;
+		font-family: Gotham-Bold;
+		line-height: 38px;
+		letter-spacing: -2px;
+		margin: 0;
+	}
 
-    #lessEnergy .container .container-inner {
-        width: 450px;
-        padding-left: 15%;
-        text-align: left;
-        padding-bottom: 30px;
-    }
+	#lessEnergy .container .container-inner {
+		width: 430px;
+		padding-left: 15%;
+		text-align: left;
+	}
 
-    #lessEnergy .left-column{
-        display: table-cell;
-        height: 100%;
-        width: 40%;
-        min-width: 450px;
-        vertical-align: middle;
-        text-align: right;
-    }
+	#lessEnergy .left-column {
+		display: table-cell;
+		height: 100%;
+		width: 40%;
+		min-width: 450px;
+		vertical-align: middle;
+		text-align: right;
+	}
 
-    #lessEnergy .left-column .section-title{
-        width: 320px;
-        padding-right: 23%;
-        font-size: 33px;
-        line-height: 37px;
-        padding-bottom: 25px;
-    }
+	#lessEnergy .left-column .section-title {
+		width: 350px;
+		padding-right: 15%;
+		font-size: 45px;
+		line-height: 50px;
+	}
 
-    #lessEnergy .right-column{
-        text-align: left;
-        width: 70%;
-        padding: 0px;
-        vertical-align: middle;
-        -moz-border-radius: 0px;
-        -webkit-border-radius: 0px;
-        border-radius: 0px;
-    }
-    #lessEnergy .right-column h2 {
-        margin-bottom: 65px;
-        font-size: 40px;
-        line-height: 40px;
-        margin-left: -1px;
-        letter-spacing: -0.7px;
-    }
-    #lessEnergy .right-column h3 {
-        display: none;
-    }
+	#lessEnergy .right-column {
+		text-align: left;
+		width: 70%;
+		padding: 0px;
+		vertical-align: middle;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+	}
 
+	#lessEnergy .right-column h2 {
+		margin-bottom: 20%;
+		font-size: 50px;
+		margin-left: 0px;
+		letter-spacing: -2px;
+	}
 
+	#lessEnergy .right-column h3 {
+		display: none;
+	}
 
-    #lessEnergy .right-column .annotation {
-        font-family: Gotham-Bold;
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: -0.7px;
-        width: 255px;
-        margin: 0;
-        margin-top: 61px;
-    }
+	#lessEnergy .right-column .annotation {
+		font-family: Gotham-Bold;
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: 0;
+		margin: 0;
+		margin-top: 10%;
+	}
 
-
-    /* ===========================
+	/* ===========================
    ===== containersOptional  =====
    =========================== */
-    #containersOptional .background {
-        height: 100%;
-        overflow: hidden;
-        background-position: center center;
+	#containersOptional .background {
+		height: 100%;
+		overflow: hidden;
+		background-position: center center;
 
-    }
+	}
 
-    #containersOptional .container {
-        display: table;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        opacity: .85;
-        text-align: left;
-    }
+	#containersOptional .container {
+		display: table;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		opacity: .85;
+		text-align: left;
+	}
 
-    #containersOptional .container .container-inner {
-        max-width: 510px;
+	#containersOptional .container .container-inner {
+		max-width: 500px;
 
-        padding: 0;
-        padding-left: 140px;
-        text-align: left;
-        padding-bottom: 40px;
+		padding: 0;
+		padding-left: 15%;
+		text-align: left;
 
-        -moz-border-radius: 0px;
-        -webkit-border-radius: 0px;
-        border-radius: 0px;
-        background: transparent;
-    }
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		background: transparent;
+	}
 
-    #containersOptional .left-column{
-        display: table-cell;
-        height: 100%;
-        width: 40%;
-        min-width: 450px;
-        padding-left: 95px;
-        vertical-align: bottom;
-    }
+	#containersOptional .left-column {
+		display: table-cell;
+		height: 100%;
+		width: 40%;
+		min-width: 450px;
+		padding-left: 95px;
+		vertical-align: bottom;
+	}
 
-    #containersOptional .left-column img{
-        width: 110%;
-        margin-left: -35px;
-    }
+	#containersOptional .left-column img {
+		width: 95%;
+		margin: 0;
+	}
 
-    #containersOptional .right-column{
-        width: 70%;
-        padding: 0px;
-    }
+	#containersOptional .right-column {
+		width: 70%;
+		padding: 0px;
+	}
 
-    #containersOptional .right-column h3 {
-        font-size: 33px;
-        letter-spacing: -2px;
-        line-height: 27px;
-    }
+	#containersOptional .right-column h3 {
+		font-size: 45px;
+		letter-spacing: -3px;
+		line-height: 50px;
+	}
 
-    #containersOptional .right-column p {
-        font-size: 22px;
-        font-family: Gotham-Book;
-        line-height: 28px;
-        letter-spacing: -1.25px;
-        margin: auto;
-    }
+	#containersOptional .right-column p {
+		font-size: 30px;
+		font-family: Gotham-Book;
+		line-height: 38px;
+		letter-spacing: -2px;
+		margin: auto;
+	}
 
-
-    /* ===========================
+	/* ===========================
    ===== flavorsForEveryone  =====
    =========================== */
-    #flavorsForEveryone .background {
-        height: 100%;
-        overflow: hidden;
-    }
+	#flavorsForEveryone .background {
+		height: 100%;
+		overflow: hidden;
+	}
 
-    #flavorsForEveryone .container {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        opacity: .85;
-        text-align: left;
-    }
+	#flavorsForEveryone .container {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		opacity: .85;
+		text-align: left;
+	}
 
-    #flavorsForEveryone .container .container-inner {
-        width: 340px;
-        padding: 0;
-        padding-left: 15%;
-        text-align: left;
-        padding-bottom: 30px;
-    }
+	#flavorsForEveryone .container .container-inner {
+		width: 450px;
+		padding: 0;
+		padding-left: 15%;
+		text-align: left;
+	}
 
-    #flavorsForEveryone .left-column{
-        display: table-cell;
-        height: 100%;
-        width: 40%;
-        min-width: 450px;
-        vertical-align: middle;
-        text-align: right;
-    }
+	#flavorsForEveryone .left-column {
+		display: table-cell;
+		height: 100%;
+		width: 40%;
+		min-width: 450px;
+		vertical-align: middle;
+		text-align: right;
+	}
 
-    #flavorsForEveryone .left-column .section-title{
-        width: 350px;
-        font-family: Gotham-Bold;
-        font-size: 33px;
-        line-height: 37px;
-        letter-spacing: -2.2px;
-        padding-bottom: 40px;
-        padding-right: 18%;
-    }
+	#flavorsForEveryone .left-column .section-title {
+		width: 350px;
+		padding-right: 15%;
+		font-size: 45px;
+		line-height: 50px;
+		font-family: Gotham-Bold;
+		letter-spacing: -3px;
 
-    #flavorsForEveryone .right-column{
-        text-align: left;
-        width: 70%;
-        padding: 0px;
-        -moz-border-radius: 0px;
-        -webkit-border-radius: 0px;
-        border-radius: 0px;
-    }
+	}
 
-    #flavorsForEveryone .right-column h3{
-        display: none;
-    }
+	#flavorsForEveryone .right-column {
+		text-align: left;
+		width: 70%;
+		padding: 0px;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+	}
 
-    #flavorsForEveryone .right-column p {
-        font-size: 22px;
-        font-family: Gotham-Bold;
-        line-height: 28px;
-        letter-spacing: -1.35px;
-    }
+	#flavorsForEveryone .right-column h3 {
+		display: none;
+	}
 
+	#flavorsForEveryone .right-column p {
+		font-size: 30px;
+		font-family: Gotham-Bold;
+		line-height: 38px;
+		letter-spacing: -2px;
+	}
 
-    /* ===========================
+	/* ===========================
    ===== convenientAccess  =====
    =========================== */
-    #convenientAccess .background {
-        height: 100%;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center center;
-    }
+	#convenientAccess .background {
+		height: 100%;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center center;
+	}
 
-    #convenientAccess .container {
-        display: table;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        opacity: .85;
-        text-align: left;
-    }
+	#convenientAccess .container {
+		display: table;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		opacity: .85;
+		text-align: left;
+	}
 
-    #convenientAccess .container .container-inner {
-        max-width: 390px;
+	#convenientAccess .container .container-inner {
+		max-width: 500px;
 
-        padding: 0;
-        padding-left: 17%;
-        text-align: left;
+		padding: 0;
+		padding-left: 15%;
+		text-align: left;
 
-        -moz-border-radius: 0px;
-        -webkit-border-radius: 0px;
-        border-radius: 0px;
-        background: transparent;
-    }
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		background: transparent;
+	}
 
-    #convenientAccess .left-column{
-        display: table-cell;
-        height: 100%;
-        width: 40%;
-        min-width: 450px;
-        vertical-align: middle;
-        text-align: right;
-    }
+	#convenientAccess .left-column {
+		display: table-cell;
+		height: 100%;
+		width: 40%;
+		min-width: 450px;
+		vertical-align: middle;
+		text-align: right;
+	}
 
+	#convenientAccess .right-column {
+		width: 70%;
+		padding: 0px;
+	}
 
-    #convenientAccess .right-column{
-        width: 70%;
-        padding: 0px;
-    }
+	#convenientAccess .right-column h3 {
+		font-size: 45px;
+		letter-spacing: -3px;
+		line-height: 50px;
+	}
 
-    #convenientAccess .right-column h3 {
-        font-size: 33px;
-        letter-spacing: -1.3px;
-        line-height: 15px;
-    }
+	#convenientAccess .right-column p {
+		font-size: 30px;
+		font-family: Gotham-Book;
+		line-height: 38px;
+		letter-spacing: -2px;
+	}
 
-    #convenientAccess .right-column p {
-        font-size: 22px;
-        font-family: Gotham-Book;
-        line-height: 28px;
-        letter-spacing: -1.25px;
-        margin-top: 0px;
-    }
-
-
-    /* ===========================
+	/* ===========================
    ===== workDescription  =====
    =========================== */
 	#workDescription .background {
@@ -1369,18 +1309,18 @@ footer .container .linksList .imageCell img {
 		text-align: center;
 		padding: 30px 20px 105px 20px;
 	}
-	
+
 	#creatorsStory .container h3 {
-        font-size: 40px;
-        font-family: Gotham-Black;
-        margin: 32px 0 100px 0;
+		font-size: 55px;
+		font-family: Gotham-Black;
+		margin: 80px 0 100px 0;
 	}
-    #creatorsStory .container .description p{
-        font-size: 22px;
-        line-height: 28px;
-        letter-spacing: -1.25px;
-        padding-bottom: 170px;
-    }
+
+	#creatorsStory .container .description p {
+		font-size: 30px;
+		font-family: Gotham-Bold;
+		line-height: 38px;
+	}
 
 	#creatorsStory .container .container-inner {
 		display: table-cell;
@@ -1393,317 +1333,70 @@ footer .container .linksList .imageCell img {
 	}
 
 	#creatorsStory .container .description {
-		width: 235px;
+		width: 380px;
 		text-align: right;
 	}
 
 	#creatorsStory .container .story-list {
-		width: 495px;
+		width: 652px;
 		padding-left: 90px;
 	}
 
-	#creatorsStory .container .story-list .thumbnail img{
+	#creatorsStory .container .story-list .thumbnail img {
 		width: auto;
-        height: 155px;
-	}
-	
-	#creatorsStory .container .story-list p {
-        padding-left: 31px;
-        font-size: 12px;
-        line-height: 14.5px;
-        letter-spacing: -0.4px;
 	}
 
-    #creatorsStory .container .story-list li{
-        padding: 4px 0;
-    }
+	#creatorsStory .container .story-list p {
+		padding-left: 50px;
+		font-family: Gotham-Book;
+		font-size: 17px;
+		line-height: 20px;
+	}
+
 	/* ===========================
    ===== Footer  =====
    =========================== */
-	
 	footer .container {
-		height: 90px;
+		height: 120px;
 		padding: 0px 25px 0px 25px;
 	}
-	
+
 	footer .container .linksList .twitterCell {
 		text-align: left;
-		padding: 0 15% 0 0;
+		padding: 0 11% 0 3%;
 	}
 
 	footer .container .linksList .copyright {
-		font-size: 9px;
+		font-size: 12px;
 		color: #5c5c5c;
 		font-family: Gotham-Book;
-        float: right;
 	}
 
 	footer .container .linksList .imageCell {
-		width: 25px;
+		width: 35px;
 	}
-	
+
 	footer .container .linksList li {
 		padding: 0 3%;
 	}
-
-    footer .container a{
-        font-size: 0.7em;
-        letter-spacing: -0.7px;
-    }
 }
 
-@media screen and (min-width: 1400px) {
-    #toTheTopArrow{
-        width: 72px;
-        right: 25px;
-        bottom: 80px;
-    }
+@media screen and (min-width: 1200px) {
 
-    #toTheTopArrow.active{
-        height: 71px;
-    }
+	#intro .container h1 {
+		font-size: 120px;
+		font-family: Gotham-Bold;
+	}
 
-    #intro .container h1{
-        font-size: 120px;
-        letter-spacing: -0.5px;
-    }
+	#intro .container h2 {
+		font-family: Gotham-Light;
+		font-size: 38px;
+		text-indent: 0.1em;
+	}
 
-    #intro .container h2{
-        font-size: 40px;
-        letter-spacing: -0.75px;
-        line-height: 2.45em;
-    }
-
-    #intro .container header {
-        margin: 35px 58px;
-    }
-
-    #intro .container header nav ul li {
-        font-size: 1.15em;
-        padding-left: 4%;
-    }
-
-    #intro .container .reserve {
-        line-height: 1.7em;
-        max-width: 180px;
-        padding: 7px 70px 7px 35px;
-        font-size: 0.83em;
-    }
-
-    /* ===========================
-   ===== Product  =====
-   =========================== */
-
-    #product .container .newsList {
-        padding: 0px 0px 30px 0px;
-    }
-
-
-    #product .container .productInfo {
-        padding-top: 100px;
-    }
-
-    #product .container .dispenserPhoto img {
-        width: 290px;
-    }
-
-    #product .container .dispenserDescription {
-        width: 500px;
-        padding: 95px 0px 0px 90px;
-    }
-
-    #product .container .dispenserDescription h3 {
-        font-size: 55px;
-        letter-spacing: 0.7px;
-        line-height: 55px;
-    }
-
-    #product .container .dispenserDescription p{
-        font-family: Gotham-Book;
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: -0.4px;
-    }
-
-
-    /* ===========================
-  ===== lessEnergy  =====
-  =========================== */
-
-    #lessEnergy .left-column .section-title{
-        width: 350px;
-        padding-right: 15%;
-        font-size: 45px;
-        line-height: 50px;
-    }
-
-    #lessEnergy .right-column h2 {
-        margin-bottom: 20%;
-        font-size: 50px;
-        margin-left: 0px;
-        letter-spacing: -1px;
-    }
-
-    #lessEnergy .container .container-inner {
-    }
-
-    #lessEnergy .container p {
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: -1.5px;
-        margin: 0;
-        width: 450px;
-    }
-
-    #lessEnergy .right-column .annotation {
-        font-size: 22px;
-        line-height: 30px;
-        letter-spacing: -1.27px;
-        width: 340px;
-        margin-top: 10%;
-    }
-
-    /* ===========================
-  ===== containersOptional  =====
-  =========================== */
-
-    #containersOptional .container .container-inner {
-        max-width: 650px;
-
-        padding: 0;
-        padding-left: 15%;
-        text-align: left;
-
-        -moz-border-radius: 0px;
-        -webkit-border-radius: 0px;
-        border-radius: 0px;
-        background: transparent;
-    }
-
-    #containersOptional .left-column img{
-        width: 95%;
-        margin: 0;
-    }
-
-
-    #containersOptional .right-column h3 {
-        font-size: 45px;
-        letter-spacing: -2.5px;
-        line-height: 50px;
-    }
-
-    #containersOptional .right-column p {
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: -1.5px;
-    }
-
-    /* ===========================
-  ===== flavorsForEveryone  =====
-  =========================== */
-    #flavorsForEveryone .container .container-inner {
-        width: 500px;
-
-    }
-
-    #flavorsForEveryone .left-column .section-title{
-        font-size: 45px;
-        line-height: 50px;
-        letter-spacing: -3px;
-        padding-bottom: 0px;
-    }
-
-    #flavorsForEveryone .right-column p {
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: -1.75px;
-    }
-
-    /* ===========================
-  ===== convenientAccess  =====
-  =========================== */
-
-    #convenientAccess .container .container-inner {
-        max-width: 500px;
-        padding-left: 15%;
-    }
-
-    #convenientAccess .right-column h3 {
-        font-size: 45px;
-        letter-spacing: -1.3px;
-        line-height: 45px;
-    }
-
-    #convenientAccess .right-column p {
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: -2px;
-        margin-top: 10px;
-    }
-
-    /* ===========================
-   ===== creatorsStory  =====
-   =========================== */
-
-
-    #creatorsStory .container h3 {
-        font-size: 55px;
-        margin: 20px 0 100px 0;
-    }
-    #creatorsStory .container .description p{
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing: -1.5px;
-        padding-bottom: 0;
-    }
-
-    #creatorsStory .container .description {
-        width: 320px;
-    }
-
-    #creatorsStory .container .story-list {
-        width: 652px;
-    }
-
-    #creatorsStory .container .story-list .thumbnail img{
-        height: 211px;
-    }
-
-    #creatorsStory .container .story-list p {
-        padding-left: 50px;
-        font-size: 17px;
-        line-height: 20px;
-        letter-spacing: -1px;
-    }
-
-    #creatorsStory .container .story-list li{
-        padding: 10px 0;
-    }
-
-    /* ===========================
-===== Footer  =====
-=========================== */
-
-    footer .container .linksList .twitterCell {
-        text-align: left;
-        padding: 0 11% 0 3%;
-    }
-
-    footer .container .linksList .copyright {
-        font-size: 12px;
-        color: #5c5c5c;
-        font-family: Gotham-Book;
-    }
-
-    footer .container a{
-        font-size: 0.9em;
-    }
-    footer .container .linksList .imageCell {
-        width: 35px;
-    }
-
-    footer .container {
-        height: 120px;
-    }
-
+	#intro .container header nav ul li {
+		font-family: Gotham-Bold;
+		font-size: 1.15em;
+		padding-left: 4%;
+	}
 }

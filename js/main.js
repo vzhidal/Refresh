@@ -12,10 +12,10 @@ $(function () {
 	InitCurtain();
 
 	function scrollToSlide(slide) {
-		if(slide.length) {
+		if (slide.length) {
 			var scrollVal = 0;
 			var wrap = slide.data('ds-curtain-parent');
-			if(wrap) {
+			if (wrap) {
 				scrollVal = wrap.offset().top;
 			} else {
 				scrollVal = slide.offset().top;
@@ -24,7 +24,7 @@ $(function () {
 		}
 	}
 
-	if(window.location.hash) {
+	if (window.location.hash) {
 		var slide = $(window.location.hash);
 		scrollToSlide(slide);
 	}
@@ -45,14 +45,14 @@ function CheckPager() {
 
 		var scrollVal = 0;
 		var wrap = slide.data('ds-curtain-parent');
-		if(wrap) {
+		if (wrap) {
 			scrollVal = wrap.offset().top;
 		} else {
 			scrollVal = slide.offset().top;
 		}
 
-		if($(window).scrollTop() >= scrollVal) {
-            $('#toTheTopArrow').toggleClass("active", slide.attr('id') !== 'intro');
+		if ($(window).scrollTop() >= scrollVal) {
+			$('#toTheTopArrow').toggleClass("active", slide.attr('id') !== 'intro');
 			$('.slide-pager a').removeClass('active');
 			$('.pager-link-' + slide.attr('id')).addClass('active');
 		}
@@ -60,7 +60,7 @@ function CheckPager() {
 }
 
 function InitCurtain() {
-	if($(window).width() > 768) {
+	if ($(window).width() > 768) {
 		$('.main-slides .main-section').dsCurtain();
 	} else {
 		$('.main-slides .main-section').dsCurtain('destroy');
@@ -92,7 +92,7 @@ function PulseArrows() {
 }
 
 function InitSlideHeight() {
-	if($(window).width() > 768) {
+	if ($(window).width() > 768) {
 		$('.main-slides .section-content').css({'min-height': $(window).height() + 'px'});
 	} else {
 		$('.intro-section .section-content').css({'min-height': $(window).height() + 'px'});
@@ -100,7 +100,7 @@ function InitSlideHeight() {
 }
 
 function SetSlideHeight() {
-	if($(window).width() > 768) {
+	if ($(window).width() > 768) {
 		$('.main-slides .section-content').css({'min-height': $(window).height() + 'px'});
 	} else {
 		var tempH = $('.intro-section .section-content').css('min-height');
@@ -125,7 +125,7 @@ function SetSlideHeight() {
 		init: function (args) {
 			$this = this;
 
-			if(touched == false && init == false) {
+			if (touched == false && init == false) {
 				options = $.extend({
 					deadZone: 0
 				}, args);
@@ -141,7 +141,7 @@ function SetSlideHeight() {
 					slide.data('ds-curtain-parent', wrap);
 					wrap.data('ds-curtain-child', slide);
 
-					if(totalSlides == (i + 1)) {
+					if (totalSlides == (i + 1)) {
 						wrap.height(slide.height());
 					} else {
 						wrap.height(slide.height() + options.deadZone);
@@ -174,7 +174,7 @@ function SetSlideHeight() {
 			});
 
 			$(window).on('touchstart', function (e) {
-				if(!touched) {
+				if (!touched) {
 					touched = true;
 					$this.dsCurtain('destroy');
 
@@ -185,17 +185,17 @@ function SetSlideHeight() {
 			return this;
 		},
 		reinit: function () {
-			if(init) {
+			if (init) {
 				$this.dsCurtain('destroy');
 				$this.dsCurtain();
 			}
 		},
 		setScroll: function () {
-			if(init) {
-				for(var i = 0; i < slides.length; i++) {
+			if (init) {
+				for (var i = 0; i < slides.length; i++) {
 					var slide = slides[i];
 					var wrap = slide.data('ds-curtain-parent');
-					if($(window).scrollTop() >= slidePos[i] && $(window).scrollTop() <= slidePos[i + 1]) {
+					if ($(window).scrollTop() >= slidePos[i] && $(window).scrollTop() <= slidePos[i + 1]) {
 						slide.css({
 							'position': 'fixed',
 							'left': '0',
@@ -210,14 +210,28 @@ function SetSlideHeight() {
 							'right': ''
 						});
 					}
+					if ($(window).scrollTop() >= slidePos[i] && $(window).scrollTop() <= slidePos[i] + 300) {
+						slide.css({
+							'position': 'fixed',
+							'left': '0',
+							'top': '0',
+							'right': '0',
+							'z-index': 999
+						});
+					} else {
+						slide.css({
+							'z-index': ''
+						});
+					}
+
 				}
 			}
 		},
 		destroy: function (options) {
-			if(init) {
+			if (init) {
 				init = false;
 
-				for(i in slides) {
+				for (i in slides) {
 					var slide = slides[i];
 
 					slide.css({
@@ -244,9 +258,9 @@ function SetSlideHeight() {
 	}
 
 	$.fn.dsCurtain = function (method) {
-		if(methods[method]) {
+		if (methods[method]) {
 			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
-		} else if(typeof method === 'object' || !method) {
+		} else if (typeof method === 'object' || !method) {
 			return methods.init.apply(this, arguments);
 		} else {
 			$.error('Method ' + method + ' does not exist on jQuery.dsCurtain');
